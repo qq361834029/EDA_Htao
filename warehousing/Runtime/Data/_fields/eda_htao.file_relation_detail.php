@@ -1,0 +1,2 @@
+<?php
+return array ( 0 => 'id', 1 => 'object_id', 2 => 'relation_id', 3 => 'file_type', '_autoinc' => false, '_type' => array ( 'id' => 'int(11)', 'object_id' => 'int(10) unsigned', 'relation_id' => 'int(11)', 'file_type' => 'tinyint(3) unsigned', ), ); ?>

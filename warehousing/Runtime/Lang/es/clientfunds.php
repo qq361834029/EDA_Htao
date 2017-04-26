@@ -1,0 +1,2 @@
+<?php
+return array ( 'client_ini_info' => 'Vendedor primero cobrar', 'client_sale_info' => 'Vendedor primero pedido cobrar', 'client_other_info' => 'Vendedor debe cobrar', 'client_funds_info' => 'Combinar en los registros de cobrar', ); ?>

@@ -1,0 +1,13 @@
+{ytt_table
+	show=[
+		["value"=>"ship_name","title"=>$lang.express_way,"width"=>"25%"],
+		["value"=>"question","title"=>$lang.question_order_number,"width"=>"25%"],
+		["value"=>"sale","title"=>$lang.express_number,"width"=>"25%"],  
+		["value"=>"rate","title"=>$lang.question_rate,"width"=>"25%","link"=>['url'=>'QuestionOrderStat/view',"link_id"=>['id'=>'ship_id','period'=>$smarty.post.period]]]
+		]
+	listType="flow"
+	flow="sale"
+	from=$list.list
+    addTab=true
+    operate=false
+}

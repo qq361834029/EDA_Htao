@@ -1,0 +1,2 @@
+<?php
+return array ( 'recharge_date' => 'data di ricarica denaro', 'recharge_money' => 'importo di ricarica denaro', 'payment_document' => 'I Certificati di consegna', 'edit_charge' => 'IL montaggio di ricarica.', 'confirm_money' => 'L\'importo di conferma', 'recharge_confirm' => 'La conferma di ricarica.', 'confirm_money_over_money' => 'Confermare l\'importo non supera l\'importo di ricarica.', 'no_upload_payment' => 'Per favore, caricare I Certificati di consegna', ); ?>

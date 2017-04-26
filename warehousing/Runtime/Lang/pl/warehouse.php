@@ -1,0 +1,2 @@
+<?php
+return array ( 'warehouse_address' => 'Obóz Adres', 'warehouse_spec' => 'Dostępne Specyfikacja', 'warehouse_area' => 'Powierzchnia nośna', 'landlord' => 'Ziemianin', 'bank_info' => 'Bank informacji', 'bank_no' => 'Rachunek bankowy', 'default_warehouse' => 'Standardowy Magazyn', 'fax_no' => 'QQ', ); ?>

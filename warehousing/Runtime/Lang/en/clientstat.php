@@ -1,0 +1,2 @@
+<?php
+return array ( 'expand_sale_detail' => 'details of sells ', 'date' => 'outstanding date ', 'should_paid' => 'amount to receive', 'have_paid' => 'amount received', 'need_paid' => 'amount to pay', 'use_paid' => 'Unallocated amounts', 'funds' => 'unpaid amount', 'mobile' => 'mobile', 'preferential_money' => 'discounted amount', 'sent_email' => 'send Email', ); ?>

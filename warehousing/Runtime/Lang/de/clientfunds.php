@@ -1,0 +1,2 @@
+<?php
+return array ( 'client_ini_info' => 'Rückzahlung der ältesten Rechnungen', 'client_sale_info' => 'Zahlungsanweisungen an Verkäufer', 'client_other_info' => 'Soll Forderungen des Verkäufers', 'client_funds_info' => 'An den Zahlungsempfänger Datensätze zusammenzuführen', ); ?>

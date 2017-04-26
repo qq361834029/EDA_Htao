@@ -1,0 +1,2 @@
+<?php
+return array ( 'recharge_date' => 'top up date', 'recharge_money' => 'top up amount', 'payment_document' => 'Remittance voucher', 'edit_charge' => 'Edit top up', 'confirm_money' => 'Confirm amount', 'recharge_confirm' => 'Recharge confirmation', 'confirm_money_over_money' => 'The amount must not exceed the amount of prepaid recharge', 'no_upload_payment' => 'Please send remittance voucher', ); ?>

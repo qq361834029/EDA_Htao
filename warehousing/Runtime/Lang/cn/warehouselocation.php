@@ -1,0 +1,2 @@
+<?php
+return array ( 'shelves_cols' => '货架列数', 'shelves_layers' => '货架层数', 'layer_boxs' => '每层单位数', 'path_sort' => '路径优先级', 'zone_all_col_num_over_limit' => '&quot;%s&quot;仓库-&gt;%s的货架总列数超过99！', 'location_repeat' => '&quot;%s&quot;仓库已存在该库区编号！', 'exist_product_on_location' => '删除的库位中存在产品！', 'exportLocationList' => '导出库位表', 'valid_zone_no' => '格式为不超过4位的英文或数字', 'starting_layers' => '起始层数', 'starting_layers_over_the_limit' => '起始层数不得大于货架层数', 'location_overlap' => '当前库区与其它库区存在库位编号重叠', ); ?>

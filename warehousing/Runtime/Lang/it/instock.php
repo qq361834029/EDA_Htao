@@ -1,0 +1,2 @@
+<?php
+return array ( 'get_address' => 'indirizzo per ritiro a sede', 'box_detail_info' => 'informazioni dettagliati delle scatole', 'add_box' => 'nuovo numero di Box aggiunto ', 'del_box' => 'cancelli numero di Box', 'spec_error' => 'ripetuto le specifiche dei prodotti', 'hold' => 'Salva e continua ', 'instock_no' => 'la distinta di spedizione', 'no_delete_box' => 'cancelli i prodotti con n. BOX di:', 'client_comments' => 'Note del venditore ', 'delivery_pics' => 'foto di spedizione', 'invoice_pics' => 'foto di fattura', 'has_instock_cant_delete' => '产品已入库不能删除！', ); ?>

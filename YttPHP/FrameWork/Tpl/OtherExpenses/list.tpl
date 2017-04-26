@@ -1,0 +1,13 @@
+ {ytt_table 
+	show=[
+			["value"=>"fmd_paid_date","title"=>$lang.date,"width"=>"10%"], 
+			["value"=>"basic_name","title"=>$lang.basic_name,'type'=>'flow_show_many_basic',"width"=>"15%"],
+			["value"=>"pay_class_name","title"=>$lang.outlay_class,"width"=>"12%"],
+			["value"=>"dd_is_cost","title"=>$lang.is_cost,"width"=>"10%"],
+			["value"=>"currency_no","title"=>$lang.currency,"width"=>"10%"],
+			["value"=>"dml_money","title"=>$lang.money,"width"=>"12%"],
+			["value"=>"comments","title"=>$lang.comments] 
+		]
+	sort=["color_no"=>["sort_by"=>0,"sort_action"=>"index"]]
+	from=$list.list
+} 

@@ -1,0 +1,20 @@
+{ytt_table 
+	show=[
+			["value"=>"storage_no","title"=>$lang.instock_no,"link"=>["link_id"=>"id","url"=>"InstockStorage/view"]],
+			["value"=>"instock_no","title"=>$lang.delivery_no,"link"=>['url'=>'Instock/view',"link_id"=>['id'=>'instock_id']]],
+			["value"=>"dd_head_way","title"=>$lang.head_way],
+            ["value"=>"logistics_name","title"=>$lang.logistics],
+            ["value"=>"w_name","title"=>$lang.destination],
+            ["value"=>"container_no","title"=>$lang.logistics_no],
+            ["value"=>"fmd_go_date","title"=>$lang.go_date],
+            ["value"=>"fmd_arrive_date","title"=>$lang.arrive_date],
+            ["value"=>"fmd_real_arrive_date","title"=>$lang.real_arrive_date],
+			["value"=>"storage_date","title"=>$lang.storage_date],
+			["value"=>"factory_name","title"=>$lang.belongs_seller],
+			["value"=>"comments","title"=>$lang.comments] 
+		]
+    listType=flow
+	from=$list.list
+    addTab=true
+}
+

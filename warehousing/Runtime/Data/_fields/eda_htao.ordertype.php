@@ -1,0 +1,2 @@
+<?php
+return array ( 0 => 'id', 1 => 'order_type_name', 2 => 'to_hide', 3 => 'comments', 4 => 'add_user', 5 => 'edit_user', 6 => 'lock_version', '_autoinc' => false, '_type' => array ( 'id' => 'int(11) unsigned', 'order_type_name' => 'varchar(255)', 'to_hide' => 'tinyint(3) unsigned', 'comments' => 'varchar(255)', 'add_user' => 'smallint(5) unsigned', 'edit_user' => 'smallint(5) unsigned', 'lock_version' => 'smallint(5) unsigned', ), ); ?>

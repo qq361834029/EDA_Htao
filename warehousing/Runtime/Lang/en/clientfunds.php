@@ -1,0 +1,2 @@
+<?php
+return array ( 'client_ini_info' => 'receivable brought forward for seller', 'client_sale_info' => 'receivable for sellers from orders', 'client_other_info' => 'receivable for sellers', 'client_funds_info' => 'Merge to the payee records', ); ?>

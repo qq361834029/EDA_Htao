@@ -1,0 +1,2 @@
+<?php
+return array ( 'start_adjust_date' => 'Stellen Sie das Datum aus', 'adjust_total' => 'Korrektur des Produktes', 'adjust_detail' => 'Korrektur Details', 'adjust_basic' => 'Korrektur Basisinformationen', ); ?>

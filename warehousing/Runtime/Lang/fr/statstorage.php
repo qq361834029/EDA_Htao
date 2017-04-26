@@ -1,0 +1,2 @@
+<?php
+return array ( 'init_quantity' => 'Nb initial', 'intock_total' => 'Qté Total Mi-En-Stock', 'outtock_total' => 'Qté Total Sort-En-Stock', 'adjust_quantity' => 'Ajuster Qté total', 'closing_quantity' => 'Qté Fin d\'Année', ); ?>

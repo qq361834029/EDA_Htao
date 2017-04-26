@@ -1,0 +1,2 @@
+<?php
+return array ( 'vat_number' => 'Umsatzsteuer ID', 'reg_number' => 'Handelsregister Nr.', 'house_bank' => 'Bank Institute', 'account_holder' => 'Kontoinhaber', 'bank_code' => 'BIC', 'iban_account' => 'IBAN', 'upload_logo' => 'LOGO upload', 'web' => 'WEB', 'auto_shipping' => '智能派送', ); ?>

@@ -1,0 +1,2 @@
+<?php
+return array ( 'vat_number' => '增值税号', 'reg_number' => '商业登记号码', 'house_bank' => '开户行', 'account_holder' => '账户持有人', 'bank_code' => '银行代码', 'iban_account' => 'IBAN账户', 'upload_logo' => '上传logo', 'web' => '网站地址', 'auto_shipping' => '智能派送', ); ?>

@@ -1,0 +1,2 @@
+<?php
+return array ( 'p_name' => 'il nome di proprietà collegata', 'pv_name' => 'nome dei valori di proprietà', 'pv_no' => 'numero di valori di proprietà', 'title_2' => 'informazione di proprietà collegata', 'title_1' => 'informazione di valori di proprietà', ); ?>

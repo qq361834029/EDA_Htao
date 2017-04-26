@@ -1,0 +1,2 @@
+<?php
+return array ( 'init_quantity' => 'quantità iniziale', 'intock_total' => 'il totale di immagazzinamento', 'outtock_total' => 'il totale di uscita', 'adjust_quantity' => 'aggiorna il totale', 'closing_quantity' => 'quantità finale', ); ?>

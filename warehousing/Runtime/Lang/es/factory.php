@@ -1,0 +1,2 @@
+<?php
+return array ( 'vat_number' => 'CIF', 'reg_number' => 'N. de registro de empresa', 'house_bank' => 'Banco', 'account_holder' => 'Titular de cuenta', 'bank_code' => 'Código bancario', 'iban_account' => 'Cuenta IBAN', 'upload_logo' => 'Subir LOGO', 'web' => 'WEB', 'auto_shipping' => '智能派送', ); ?>

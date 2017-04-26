@@ -1,0 +1,2 @@
+<?php
+return array ( 'return_service_no' => '退货服务编号', 'return_service_name' => '退货服务名称', 'service_project' => '服务项目', 'item_number' => '项目编号', 'item_name' => '项目名称', 'is_return_service' => '是否退货服务', ); ?>

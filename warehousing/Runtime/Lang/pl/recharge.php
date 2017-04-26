@@ -1,0 +1,2 @@
+<?php
+return array ( 'recharge_date' => 'Ładowanie na', 'recharge_money' => 'Ilość', 'payment_document' => 'przekazanie dokumentów', 'edit_charge' => 'montaż.', 'confirm_money' => 'potwierdza, że kwoty', 'recharge_confirm' => 'potwierdzenie.', 'confirm_money_over_money' => 'potwierdzenie, że kwota nie może przekraczać kwoty.', 'no_upload_payment' => 'proszę przesłać przekazanie dokumentów', ); ?>

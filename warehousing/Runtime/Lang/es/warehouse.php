@@ -1,0 +1,2 @@
+<?php
+return array ( 'warehouse_address' => 'Dirección del almacén', 'warehouse_spec' => 'Dimensión del almacén', 'warehouse_area' => 'Área del almacén', 'landlord' => 'Propietario', 'bank_info' => 'Información bancaria', 'bank_no' => 'Cuenta bancaria', 'default_warehouse' => 'Almacén predeterminado', 'fax_no' => 'QQ', ); ?>

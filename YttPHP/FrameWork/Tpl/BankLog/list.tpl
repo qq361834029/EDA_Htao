@@ -1,0 +1,16 @@
+ {ytt_table 
+	show=[
+		["value"=>"fmd_delivery_date","title"=>$lang.date,"width"=>"8%"],
+		["value"=>"currency_no","title"=>$lang.currency_no,"width"=>"6%"],
+		["value"=>"dd_relevance_cash","title"=>$lang.relevance_cash,"width"=>"5%"],
+		["value"=>"dd_save_draw_type","title"=>$lang.save_draw_type,"width"=>"10%"],
+		["value"=>"bank_name","title"=>$lang.bank_name,"width"=>"15%"],
+		["value"=>"dml_income_money","title"=>$lang.save_type_money,"width"=>"10%"],
+		["value"=>"dml_outlay_money","title"=>$lang.withdraw_money,"width"=>"10%"],
+        ["value"=>"dml_other_money","title"=>$lang.other_cost,"width"=>"10%"],
+		["value"=>"edit_comments","title"=>$lang.comments]
+	]
+	sort=["delivery_date"=>["sort_by"=>0,"sort_action"=>"index"]]
+	listType='flow'
+	from=$list.list
+}

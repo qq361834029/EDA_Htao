@@ -1,0 +1,2 @@
+<?php
+return array ( 'weight' => 'Waga produktu', 'product_size_notice' => '(wypełnić tylko w wielkości opakowania)', 'product_weight_notice' => '(wypełniony tylko w stosunku do całkowitego ciężaru)', 'import_sku' => 'Zewnętrzna SKU', ); ?>

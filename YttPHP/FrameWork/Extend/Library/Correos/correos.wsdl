@@ -1,0 +1,2045 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<definitions name="PreRegistroEtiquetas" targetNamespace="http://www.correos.es/iris6/services/preregistroetiquetas" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.correos.es/iris6/services/preregistroetiquetas">
+  <types>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://www.correos.es/iris6/services/preregistroetiquetas" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.correos.es/iris6/services/preregistroetiquetas">
+			<xs:element name="FechaOperacion" type="xs:string"/>
+			<xs:element name="codCertificado" type="xs:string"/>
+			<xs:element name="CodEtiquetador">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NumContrato">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NumCliente">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Care">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="6"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TotalBultos" type="xs:integer"/>
+			<xs:element name="ModDevEtiqueta">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+						<xs:enumeration value="1"/>
+						<xs:enumeration value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Remitente" type="xsd:DATOSREMITENTETYPE"/>
+			<xs:element name="RemitenteModif" type="xsd:DATOSREMITENTEMODIFTYPE"/>
+			<xs:element name="Destinatario" type="xsd:DATOSDESTINATARIOTYPE"/>
+			<xs:element name="DestinatarioModif" type="xsd:DATOSDESTINATARIOMODIFTYPE"/>
+			<xs:element name="DestinatarioReexp" type="xsd:DATOSDESTINATARIOREEXPTYPE"/>
+			<xs:element name="Envio" type="xsd:DATOSENVIOTYPE"/>
+			<xs:element name="EnvioModif" type="xsd:DATOSENVIOMODIFTYPE"/>
+			<xs:element name="Identificacion" type="xsd:IDENTIFICACIONTYPE"/>
+			<xs:element name="DatosDireccion" type="xsd:DIRECCIONTYPE"/>
+			<xs:element name="DatosDireccion2" type="xsd:DIRECCIONTYPE"/>
+			<xs:element name="CP">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Telefonocontacto">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="15"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Email">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="50"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DatosSMS" type="xsd:SMSTYPE"/>
+			<xs:element name="NumeroSMS">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="12"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Idioma">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+						<xs:enumeration value="1"/>
+						<xs:enumeration value="2"/>
+						<xs:enumeration value="3"/>
+						<xs:enumeration value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TipoDireccion">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Direccion">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="100"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Numero">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Portal">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Bloque">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Escalera">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Piso">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Puerta">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Localidad">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="100"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Provincia">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="40"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Nombre">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="300"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Apellido1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="50"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Apellido2">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="50"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Nif">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="15"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Empresa">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="150"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PersonaContacto">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="150"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ZIP">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Pais">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DestinoApartadoPostalinternacional">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ApartadoPostaldestino">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="6"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NumBulto" type="xs:integer"/>
+			<xs:element name="CodProducto">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ReferenciaCliente">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="100"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ReferenciaCliente2">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="100"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ReferenciaCliente3">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="100"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ReferenciaExpedicion">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CodigoHomepaq">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="9"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ToquenIdCorPaq">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="50"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AdmisionHomepaq">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+						<xs:enumeration value="S"/>
+						<xs:enumeration value="N"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Documento1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AccDocumento1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ObsDocumento1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="100"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Documento2">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AccDocumento2">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ObsDocumento2">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="100"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Documento3">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AccDocumento3">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ObsDocumento3">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="100"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="OperadorPostal">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CodigoEnvioOriginal">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="50"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ExisteEnvioVueltaLI">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SeguroLI">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ImporteSeguroLI">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ReembolsoLI">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ImporteReembolsoLI">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TipoReembolsoLI">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NumeroCuentaLI">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TipoFranqueo">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="2"/>
+						<xs:enumeration value="FP"/>
+						<xs:enumeration value="FM"/>
+						<xs:enumeration value="ES"/>
+						<xs:enumeration value="ON"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NumMaquinaFranquear">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ImporteFranqueado">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CodPromocion">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ModalidadEntrega">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="2"/>
+						<xs:enumeration value="ST"/>
+						<xs:enumeration value="LS"/>
+						<xs:enumeration value="OR"/>
+						<xs:enumeration value="HP"/>
+						<xs:enumeration value="CP"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="OficinaElegida">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="7"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Pesos">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element maxOccurs="2" name="Peso" type="xsd:PESOTYPE"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Largo" type="xs:integer"/>
+			<xs:element name="Alto" type="xs:integer"/>
+			<xs:element name="Ancho" type="xs:integer"/>
+			<xs:element name="ValoresAnadidos" type="xsd:VATYPE"/>
+			<xs:element name="CodigoEmbalajePrepago">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="23"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CodigoPuntoAdmision">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="7"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="FechaDepositoPrevista" type="xs:string"/>
+			<xs:element name="Observaciones1">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="45"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Observaciones2">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="45"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="InstruccionesDevolucion">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+						<xs:enumeration value="D"/>
+						<xs:enumeration value="A"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Aduana" type="xsd:ADUANATYPE"/>
+			<xs:element name="TipoEnvio">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+						<xs:enumeration value="1"/>
+						<xs:enumeration value="2"/>
+						<xs:enumeration value="3"/>
+						<xs:enumeration value="4"/>
+						<xs:enumeration value="5"/>
+						<xs:enumeration value="6"/>
+						<xs:enumeration value="7"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="EnvioComercial">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="FacturaSuperiora500">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DUAConCorreos">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DescAduanera">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element maxOccurs="3" name="DATOSADUANA" type="xsd:DATOSADUANATYPE"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Factura">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Licencia">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Certificado">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Cantidad" type="xs:integer"/>
+			<xs:element name="Descripcion">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Pesoneto" type="xs:integer"/>
+			<xs:element name="Valorneto">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="6"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NTarifario">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PaisOrigen">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PaisDestino">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TipoPeso">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+						<xs:enumeration value="R"/>
+						<xs:enumeration value="V"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Valor">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ImporteSeguro">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="6"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Reembolso" type="xsd:REEMBOLSOTYPE"/>
+			<xs:element name="EntregaExclusivaDestinatario">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PruebaEntrega" type="xsd:PRUEBAENTREGATYPE"/>
+			<xs:element name="Recogidaadomicilio">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DevolucionAlbaran">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="RepartoenSabado">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="EntregaConcertada">
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="FechaEntregaConcertada">
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="FranjaHorariaConcertada">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="EntregaconRecogida">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="IndImprimirEtiqueta">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TextoAdicional">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="100"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Formato">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:enumeration value="0"/>
+						<xs:enumeration value="1"/>
+						<xs:enumeration value="2"/>
+						<xs:enumeration value="3"/>
+						<xs:enumeration value="4"/>
+						<xs:enumeration value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ReferenciaeAR">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="55"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="InfRemitenteEAr">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="350"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TipoReembolso">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Importe">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="6"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NumeroCuenta">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Transferagrupada">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CodExpedicion">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="FechaRespuesta" type="xs:string"/>
+			<xs:element name="Resultado">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:enumeration value="0"/>
+						<xs:enumeration value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Bulto" type="xsd:DATOSBULTOTYPE"/>
+			<xs:element name="BultoError" type="xsd:DATOSBULTOERRORTYPE"/>
+			<xs:element name="CodEnvio">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="23"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CodManifiesto">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="24"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Etiqueta" type="xsd:ETIQUETATYPE"/>
+			<xs:element name="Modo">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+						<xs:enumeration value="1"/>
+						<xs:enumeration value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Etiqueta_xml" type="xsd:DATOSETIQUETAXMLTYPE"/>
+			<xs:element name="Etiqueta_pdf" type="xsd:FICHEROADJUNTOTYPE"/>
+			<xs:element name="RemitenteEtiqueta" type="xsd:DATOSREMITENTEETIQUETATYPE"/>
+			<xs:element name="DestinatarioEtiqueta" type="xsd:DATOSDESTINATARIOETIQUETATYPE"/>
+			<xs:element name="Referencia">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PesoReal" type="xs:string"/>
+			<xs:element name="PesoVol" type="xs:string"/>
+			<xs:element name="Observaciones">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="90"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="FechaEtiquetado" type="xs:string"/>
+			<xs:element name="CodigoBarras" type="xsd:FICHEROADJUNTOTYPE"/>
+			<xs:element name="VA" type="xsd:VAETIQUETATYPE"/>
+			<xs:element name="NombreF">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="100"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Tipo_Doc">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+						<xs:enumeration value="1"/>
+						<xs:enumeration value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Fichero" type="xs:base64Binary"/>
+			<xs:element name="Adjunto">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ImporteReembolso" type="xs:string"/>
+			<xs:element name="DUA">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+						<xs:enumeration value="S"/>
+						<xs:enumeration value="N"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="eAR">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+						<xs:enumeration value="S"/>
+						<xs:enumeration value="N"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="EntregaExclusiva">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+						<xs:enumeration value="S"/>
+						<xs:enumeration value="N"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="EntregaParcial">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="RepartoSabado">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+						<xs:enumeration value="S"/>
+						<xs:enumeration value="N"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Telefono">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="15"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Error" type="xs:string"/>
+			<xs:element name="DescError" type="xs:string"/>
+			<xs:element name="ErroresValidacion" type="xsd:LISTAERRORESVALIDACIONTYPE"/>
+			<xs:element name="ErrorVal" type="xsd:ERRORVALTYPE"/>
+			<xs:element name="CodigoIda">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="23"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PermiteEmbalaje">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="FechaCaducidad" type="xs:string"/>
+			<xs:element name="TipoESAD">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NombreDestinatario">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="300"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NumeroEnvios" type="xs:string"/>
+			<xs:element name="LocalidadFirma" type="xs:string"/>
+			<xs:element name="FechaFirma" type="xs:string"/>
+			<xs:element name="NifFirma" type="xs:string"/>
+			<xs:element name="NombreFirma" type="xs:string"/>
+			<xs:element name="MotivoError" type="xs:string"/>
+			<xs:element name="TiempoEnLista" type="xs:integer"/>
+			<xs:element name="IntentosDeEntrega" type="xs:integer"/>
+			<xs:complexType name="DATOSBULTOERRORTYPE">
+				<xs:all>
+					<xs:element ref="xsd:NumBulto"/>
+					<xs:element minOccurs="0" ref="xsd:Error"/>
+					<xs:element minOccurs="0" ref="xsd:DescError"/>
+				</xs:all>
+			</xs:complexType>
+			<xs:complexType name="DATOSREMITENTEETIQUETATYPE">
+				<xs:all>
+					<xs:element minOccurs="0" ref="xsd:Nombre"/>
+					<xs:element minOccurs="0" ref="xsd:Direccion"/>
+					<xs:element minOccurs="0" ref="xsd:Localidad"/>
+					<xs:element minOccurs="0" ref="xsd:Provincia"/>
+					<xs:element minOccurs="0" ref="xsd:PersonaContacto"/>
+					<xs:element minOccurs="0" ref="xsd:CP"/>
+				</xs:all>
+			</xs:complexType>
+			<xs:complexType name="DATOSDESTINATARIOETIQUETATYPE">
+				<xs:all>
+					<xs:element minOccurs="0" ref="xsd:Nombre"/>
+					<xs:element minOccurs="0" ref="xsd:Direccion"/>
+					<xs:element minOccurs="0" ref="xsd:Localidad"/>
+					<xs:element minOccurs="0" ref="xsd:Provincia"/>
+					<xs:element minOccurs="0" ref="xsd:CP"/>
+					<xs:element minOccurs="0" ref="xsd:ZIP"/>
+					<xs:element minOccurs="0" ref="xsd:Pais"/>
+					<xs:element minOccurs="0" ref="xsd:PersonaContacto"/>
+					<xs:element minOccurs="0" ref="xsd:Telefono"/>
+				</xs:all>
+			</xs:complexType>
+			<xs:complexType name="VAETIQUETATYPE">
+				<xs:all>
+					<xs:element minOccurs="0" ref="xsd:ImporteReembolso"/>
+					<xs:element minOccurs="0" ref="xsd:DUA"/>
+					<xs:element minOccurs="0" ref="xsd:eAR"/>
+					<xs:element minOccurs="0" ref="xsd:EntregaExclusiva"/>
+					<xs:element minOccurs="0" ref="xsd:RepartoSabado"/>
+					<xs:element minOccurs="0" ref="xsd:EntregaConcertada"/>
+					<xs:element minOccurs="0" ref="xsd:FechaEntregaConcertada"/>
+					<xs:element minOccurs="0" ref="xsd:FranjaHorariaConcertada"/>
+					<xs:element minOccurs="0" ref="xsd:EntregaconRecogida"/>
+					<xs:element minOccurs="0" ref="xsd:IndImprimirEtiqueta"/>
+					<xs:element minOccurs="0" ref="xsd:TextoAdicional"/>
+				</xs:all>
+			</xs:complexType>
+			<xs:complexType name="FICHEROADJUNTOTYPE">
+				<xs:all>
+					<xs:element ref="xsd:NombreF"/>
+					<xs:element ref="xsd:Tipo_Doc"/>
+					<xs:element ref="xsd:Fichero"/>
+				</xs:all>
+			</xs:complexType>
+			<xs:complexType name="DATOSETIQUETAXMLTYPE">
+				<xs:all>
+					<xs:element ref="xsd:RemitenteEtiqueta"/>
+					<xs:element ref="xsd:DestinatarioEtiqueta"/>
+					<xs:element minOccurs="0" ref="xsd:Referencia"/>
+					<xs:element ref="xsd:PesoReal"/>
+					<xs:element minOccurs="0" ref="xsd:PesoVol"/>
+					<xs:element minOccurs="0" ref="xsd:Observaciones"/>
+					<xs:element minOccurs="0" ref="xsd:FechaEtiquetado"/>
+					<xs:element ref="xsd:CodigoBarras"/>
+					<xs:element minOccurs="0" ref="xsd:InstruccionesDevolucion"/>
+					<xs:element minOccurs="0" ref="xsd:VA"/>
+				</xs:all>
+			</xs:complexType>
+			<xs:complexType name="ETIQUETATYPE">
+				<xs:all>
+					<xs:element ref="xsd:Modo"/>
+					<xs:element minOccurs="0" ref="xsd:Etiqueta_xml"/>
+					<xs:element minOccurs="0" ref="xsd:Etiqueta_pdf"/>
+				</xs:all>
+			</xs:complexType>
+			<xs:complexType name="DATOSBULTOTYPE">
+				<xs:all>
+					<xs:element minOccurs="0" ref="xsd:NumBulto"/>
+					<xs:element ref="xsd:CodEnvio"/>
+					<xs:element ref="xsd:CodManifiesto"/>
+					<xs:element ref="xsd:Etiqueta"/>
+				</xs:all>
+			</xs:complexType>
+			<xs:complexType name="REEMBOLSOTYPE">
+				<xs:all>
+					<xs:element ref="xsd:TipoReembolso"/>
+					<xs:element ref="xsd:Importe"/>
+					<xs:element minOccurs="0" ref="xsd:NumeroCuenta"/>
+					<xs:element minOccurs="0" ref="xsd:Transferagrupada"/>
+				</xs:all>
+			</xs:complexType>
+			<xs:complexType name="PRUEBAENTREGATYPE">
+				<xs:all>
+					<xs:element minOccurs="0" ref="xsd:Formato"/>
+					<xs:element minOccurs="0" ref="xsd:ReferenciaeAR"/>
+					<xs:element minOccurs="0" ref="xsd:InfRemitenteEAr"/>
+				</xs:all>
+			</xs:complexType>
+			<xs:complexType name="VATYPE">
+				<xs:all>
+					<xs:element minOccurs="0" ref="xsd:ImporteSeguro"/>
+					<xs:element minOccurs="0" ref="xsd:Reembolso"/>
+					<xs:element minOccurs="0" ref="xsd:EntregaExclusivaDestinatario"/>
+					<xs:element minOccurs="0" ref="xsd:PruebaEntrega"/>
+					<xs:element minOccurs="0" ref="xsd:Recogidaadomicilio"/>
+					<xs:element minOccurs="0" ref="xsd:DevolucionAlbaran"/>
+					<xs:element minOccurs="0" ref="xsd:RepartoenSabado"/>
+					<xs:element minOccurs="0" ref="xsd:EntregaConcertada"/>
+					<xs:element minOccurs="0" ref="xsd:FranjaHorariaConcertada"/>
+					<xs:element minOccurs="0" ref="xsd:EntregaconRecogida"/>
+					<xs:element minOccurs="0" ref="xsd:IndImprimirEtiqueta"/>
+					<xs:element minOccurs="0" ref="xsd:TextoAdicional"/>
+					<xs:element minOccurs="0" ref="xsd:TiempoEnLista"/>
+					<xs:element minOccurs="0" ref="xsd:IntentosDeEntrega"/>
+				</xs:all>
+			</xs:complexType>
+			<xs:complexType name="PESOTYPE">
+				<xs:all>
+					<xs:element ref="xsd:TipoPeso"/>
+					<xs:element ref="xsd:Valor"/>
+				</xs:all>
+			</xs:complexType>
+			<xs:complexType name="DATOSADUANATYPE">
+				<xs:all>
+					<xs:element minOccurs="0" ref="xsd:Cantidad"/>
+					<xs:element minOccurs="0" ref="xsd:Descripcion"/>
+					<xs:element minOccurs="0" ref="xsd:Pesoneto"/>
+					<xs:element minOccurs="0" ref="xsd:Valorneto"/>
+					<xs:element minOccurs="0" ref="xsd:NTarifario"/>
+					<xs:element minOccurs="0" ref="xsd:PaisOrigen"/>
+				</xs:all>
+			</xs:complexType>
+			<xs:complexType name="ADUANATYPE">
+				<xs:all>
+					<xs:element ref="xsd:TipoEnvio"/>
+					<xs:element minOccurs="0" ref="xsd:EnvioComercial"/>
+					<xs:element minOccurs="0" ref="xsd:FacturaSuperiora500"/>
+					<xs:element minOccurs="0" ref="xsd:DUAConCorreos"/>
+					<xs:element minOccurs="0" ref="xsd:DescAduanera"/>
+					<xs:element minOccurs="0" ref="xsd:Factura"/>
+					<xs:element minOccurs="0" ref="xsd:Licencia"/>
+					<xs:element minOccurs="0" ref="xsd:Certificado"/>
+				</xs:all>
+			</xs:complexType>
+			<xs:complexType name="DATOSENVIOTYPE">
+				<xs:all>
+					<xs:element minOccurs="0" ref="xsd:NumBulto"/>
+					<xs:element ref="xsd:CodProducto"/>
+					<xs:element minOccurs="0" ref="xsd:ReferenciaCliente"/>
+					<xs:element minOccurs="0" ref="xsd:ReferenciaCliente2"/>
+					<xs:element minOccurs="0" ref="xsd:ReferenciaCliente3"/>
+					<xs:element minOccurs="0" ref="xsd:TipoFranqueo"/>
+					<xs:element minOccurs="0" ref="xsd:NumMaquinaFranquear"/>
+					<xs:element minOccurs="0" ref="xsd:ImporteFranqueado"/>
+					<xs:element minOccurs="0" ref="xsd:CodPromocion"/>
+					<xs:element minOccurs="0" ref="xsd:ModalidadEntrega"/>
+					<xs:element minOccurs="0" ref="xsd:OficinaElegida"/>
+					<xs:element ref="xsd:Pesos"/>
+					<xs:element minOccurs="0" ref="xsd:Largo"/>
+					<xs:element minOccurs="0" ref="xsd:Alto"/>
+					<xs:element minOccurs="0" ref="xsd:Ancho"/>
+					<xs:element minOccurs="0" ref="xsd:ValoresAnadidos"/>
+					<xs:element minOccurs="0" ref="xsd:CodigoEmbalajePrepago"/>
+					<xs:element minOccurs="0" ref="xsd:CodigoPuntoAdmision"/>
+					<xs:element minOccurs="0" ref="xsd:FechaDepositoPrevista"/>
+					<xs:element minOccurs="0" ref="xsd:Observaciones1"/>
+					<xs:element minOccurs="0" ref="xsd:Observaciones2"/>
+					<xs:element minOccurs="0" ref="xsd:InstruccionesDevolucion"/>
+					<xs:element minOccurs="0" ref="xsd:Aduana"/>
+					<xs:element minOccurs="0" ref="xsd:CodigoIda"/>
+					<xs:element minOccurs="0" ref="xsd:PermiteEmbalaje"/>
+					<xs:element minOccurs="0" ref="xsd:FechaCaducidad"/>
+					<xs:element minOccurs="0" ref="xsd:ReferenciaExpedicion"/>
+					<xs:element minOccurs="0" ref="xsd:CodigoHomepaq"/>
+					<xs:element minOccurs="0" ref="xsd:ToquenIdCorPaq"/>
+					<xs:element minOccurs="0" ref="xsd:AdmisionHomepaq"/>
+					<xs:element minOccurs="0" ref="xsd:Documento1"/>
+					<xs:element minOccurs="0" ref="xsd:AccDocumento1"/>
+					<xs:element minOccurs="0" ref="xsd:ObsDocumento1"/>
+					<xs:element minOccurs="0" ref="xsd:Documento2"/>
+					<xs:element minOccurs="0" ref="xsd:AccDocumento2"/>
+					<xs:element minOccurs="0" ref="xsd:ObsDocumento2"/>
+					<xs:element minOccurs="0" ref="xsd:Documento3"/>
+					<xs:element minOccurs="0" ref="xsd:AccDocumento3"/>
+					<xs:element minOccurs="0" ref="xsd:ObsDocumento3"/>
+					<xs:element minOccurs="0" ref="xsd:OperadorPostal"/>
+					<xs:element minOccurs="0" ref="xsd:CodigoEnvioOriginal"/>
+					<xs:element minOccurs="0" ref="xsd:ExisteEnvioVueltaLI"/>
+					<xs:element minOccurs="0" ref="xsd:SeguroLI"/>
+					<xs:element minOccurs="0" ref="xsd:ImporteSeguroLI"/>
+					<xs:element minOccurs="0" ref="xsd:ReembolsoLI"/>
+					<xs:element minOccurs="0" ref="xsd:ImporteReembolsoLI"/>
+					<xs:element minOccurs="0" ref="xsd:TipoReembolsoLI"/>
+					<xs:element minOccurs="0" ref="xsd:NumeroCuentaLI"/>	
+						<!-- ADM1155 INIT -->
+					<xs:element minOccurs="0" ref="xsd:CodEnvio"/>
+						<!-- ADM1155 END -->	
+				</xs:all>
+			</xs:complexType>
+			<xs:complexType name="DATOSENVIOMODIFTYPE">
+				<xs:all>
+					<xs:element minOccurs="0" ref="xsd:ReferenciaCliente"/>
+					<xs:element minOccurs="0" ref="xsd:ReferenciaCliente2"/>
+					<xs:element minOccurs="0" ref="xsd:ReferenciaCliente3"/>
+					<xs:element minOccurs="0" ref="xsd:TipoFranqueo"/>
+					<xs:element minOccurs="0" ref="xsd:NumMaquinaFranquear"/>
+					<xs:element minOccurs="0" ref="xsd:ImporteFranqueado"/>
+					<xs:element minOccurs="0" ref="xsd:CodPromocion"/>
+					<xs:element minOccurs="0" ref="xsd:OficinaElegida"/>
+					<xs:element ref="xsd:Pesos"/>
+					<xs:element minOccurs="0" ref="xsd:Largo"/>
+					<xs:element minOccurs="0" ref="xsd:Alto"/>
+					<xs:element minOccurs="0" ref="xsd:Ancho"/>
+					<xs:element minOccurs="0" ref="xsd:ValoresAnadidos"/>
+					<xs:element minOccurs="0" ref="xsd:CodigoEmbalajePrepago"/>
+					<xs:element minOccurs="0" ref="xsd:CodigoPuntoAdmision"/>
+					<xs:element minOccurs="0" ref="xsd:FechaDepositoPrevista"/>
+					<xs:element minOccurs="0" ref="xsd:Observaciones1"/>
+					<xs:element minOccurs="0" ref="xsd:Observaciones2"/>
+					<xs:element minOccurs="0" ref="xsd:InstruccionesDevolucion"/>
+					<xs:element minOccurs="0" ref="xsd:Aduana"/>
+					<xs:element minOccurs="0" ref="xsd:CodigoIda"/>
+					<xs:element minOccurs="0" ref="xsd:PermiteEmbalaje"/>
+					<xs:element minOccurs="0" ref="xsd:FechaCaducidad"/>
+					<xs:element minOccurs="0" ref="xsd:ReferenciaExpedicion"/>
+					<xs:element minOccurs="0" ref="xsd:CodigoHomepaq"/>
+					<xs:element minOccurs="0" ref="xsd:ToquenIdCorPaq"/>
+					<xs:element minOccurs="0" ref="xsd:AdmisionHomepaq"/>
+					<xs:element minOccurs="0" ref="xsd:Documento1"/>
+					<xs:element minOccurs="0" ref="xsd:AccDocumento1"/>
+					<xs:element minOccurs="0" ref="xsd:ObsDocumento1"/>
+					<xs:element minOccurs="0" ref="xsd:Documento2"/>
+					<xs:element minOccurs="0" ref="xsd:AccDocumento2"/>
+					<xs:element minOccurs="0" ref="xsd:ObsDocumento2"/>
+					<xs:element minOccurs="0" ref="xsd:Documento3"/>
+					<xs:element minOccurs="0" ref="xsd:AccDocumento3"/>
+					<xs:element minOccurs="0" ref="xsd:ObsDocumento3"/>
+					<xs:element minOccurs="0" ref="xsd:OperadorPostal"/>
+					<xs:element minOccurs="0" ref="xsd:CodigoEnvioOriginal"/>
+				</xs:all>
+			</xs:complexType>
+			<xs:complexType name="DATOSDESTINATARIOTYPE">
+				<xs:all>
+					<xs:element ref="xsd:Identificacion"/>
+					<xs:element ref="xsd:DatosDireccion"/>
+					<xs:element ref="xsd:DatosDireccion2"/>
+					<xs:element minOccurs="0" ref="xsd:CP"/>
+					<xs:element minOccurs="0" ref="xsd:ZIP"/>
+					<xs:element minOccurs="0" ref="xsd:Pais"/>
+					<xs:element minOccurs="0" ref="xsd:DestinoApartadoPostalinternacional"/>
+					<xs:element minOccurs="0" ref="xsd:ApartadoPostaldestino"/>
+					<xs:element minOccurs="0" ref="xsd:Telefonocontacto"/>
+					<xs:element minOccurs="0" ref="xsd:Email"/>
+					<xs:element minOccurs="0" ref="xsd:DatosSMS"/>
+				</xs:all>
+			</xs:complexType>
+			<xs:complexType name="DATOSDESTINATARIOMODIFTYPE">
+				<xs:all>
+					<xs:element ref="xsd:Identificacion"/>
+					<xs:element ref="xsd:DatosDireccion"/>
+					<xs:element minOccurs="0" ref="xsd:ZIP"/>
+					<xs:element minOccurs="0" ref="xsd:Pais"/>
+					<xs:element minOccurs="0" ref="xsd:DestinoApartadoPostalinternacional"/>
+					<xs:element minOccurs="0" ref="xsd:ApartadoPostaldestino"/>
+					<xs:element minOccurs="0" ref="xsd:Telefonocontacto"/>
+					<xs:element minOccurs="0" ref="xsd:Email"/>
+					<xs:element minOccurs="0" ref="xsd:DatosSMS"/>
+				</xs:all>
+			</xs:complexType>
+			<xs:complexType name="DATOSDESTINATARIOREEXPTYPE">
+				<xs:all>
+					<xs:element minOccurs="0" ref="xsd:Nombre"/>
+					<xs:element minOccurs="0" ref="xsd:Apellido1"/>
+					<xs:element minOccurs="0" ref="xsd:Apellido2"/>
+					<xs:element minOccurs="0" ref="xsd:Nif"/>
+					<xs:element minOccurs="0" ref="xsd:PersonaContacto"/>
+					<xs:element minOccurs="0" ref="xsd:TipoDireccion"/>
+					<xs:element ref="xsd:Direccion"/>
+					<xs:element minOccurs="0" ref="xsd:Numero"/>
+					<xs:element minOccurs="0" ref="xsd:Portal"/>
+					<xs:element minOccurs="0" ref="xsd:Bloque"/>
+					<xs:element minOccurs="0" ref="xsd:Escalera"/>
+					<xs:element minOccurs="0" ref="xsd:Piso"/>
+					<xs:element minOccurs="0" ref="xsd:Puerta"/>
+					<xs:element ref="xsd:Localidad"/>
+					<xs:element minOccurs="0" ref="xsd:Provincia"/>
+					<xs:element minOccurs="0" ref="xsd:CP"/>
+					<xs:element minOccurs="0" ref="xsd:Telefonocontacto"/>
+					<xs:element minOccurs="0" ref="xsd:Email"/>
+					<xs:element minOccurs="0" ref="xsd:Observaciones1"/>
+					<xs:element minOccurs="0" ref="xsd:OficinaElegida"/>
+					<xs:element minOccurs="0" ref="xsd:CodigoHomepaq"/>
+				</xs:all>
+			</xs:complexType>
+			<xs:complexType name="IDENTIFICACIONTYPE">
+				<xs:all>
+					<xs:element minOccurs="0" ref="xsd:Nombre"/>
+					<xs:element minOccurs="0" ref="xsd:Apellido1"/>
+					<xs:element minOccurs="0" ref="xsd:Apellido2"/>
+					<xs:element minOccurs="0" ref="xsd:Nif"/>
+					<xs:element minOccurs="0" ref="xsd:Empresa"/>
+					<xs:element minOccurs="0" ref="xsd:PersonaContacto"/>
+				</xs:all>
+			</xs:complexType>
+			<xs:complexType name="DIRECCIONTYPE">
+				<xs:all>
+					<xs:element minOccurs="0" ref="xsd:TipoDireccion"/>
+					<xs:element ref="xsd:Direccion"/>
+					<xs:element minOccurs="0" ref="xsd:Numero"/>
+					<xs:element minOccurs="0" ref="xsd:Portal"/>
+					<xs:element minOccurs="0" ref="xsd:Bloque"/>
+					<xs:element minOccurs="0" ref="xsd:Escalera"/>
+					<xs:element minOccurs="0" ref="xsd:Piso"/>
+					<xs:element minOccurs="0" ref="xsd:Puerta"/>
+					<xs:element ref="xsd:Localidad"/>
+					<xs:element minOccurs="0" ref="xsd:Provincia"/>
+				</xs:all>
+			</xs:complexType>
+			<xs:complexType name="SMSTYPE">
+				<xs:all>
+					<xs:element minOccurs="0" ref="xsd:NumeroSMS"/>
+					<xs:element minOccurs="0" ref="xsd:Idioma"/>
+				</xs:all>
+			</xs:complexType>
+			<xs:complexType name="DATOSREMITENTETYPE">
+				<xs:all>
+					<xs:element ref="xsd:Identificacion"/>
+					<xs:element ref="xsd:DatosDireccion"/>
+					<xs:element ref="xsd:CP"/>
+					<xs:element minOccurs="0" ref="xsd:Telefonocontacto"/>
+					<xs:element minOccurs="0" ref="xsd:Email"/>
+					<xs:element minOccurs="0" ref="xsd:DatosSMS"/>
+				</xs:all>
+			</xs:complexType>
+			<xs:complexType name="DATOSREMITENTEMODIFTYPE">
+				<xs:all>
+					<xs:element ref="xsd:Identificacion"/>
+					<xs:element ref="xsd:DatosDireccion"/>
+					<xs:element minOccurs="0" ref="xsd:Telefonocontacto"/>
+					<xs:element minOccurs="0" ref="xsd:Email"/>
+					<xs:element minOccurs="0" ref="xsd:DatosSMS"/>
+				</xs:all>
+			</xs:complexType>
+			<xs:complexType name="ERRORVALTYPE">
+				<xs:all>
+					<xs:element ref="xsd:Error"/>
+					<xs:element ref="xsd:DescError"/>
+				</xs:all>
+			</xs:complexType>
+			<xs:complexType name="LISTAERRORESVALIDACIONTYPE">
+				<xs:sequence maxOccurs="unbounded">
+					<xs:element ref="xsd:ErrorVal"/>
+				</xs:sequence>
+			</xs:complexType>
+			<xs:element name="PreregistroEnvio">
+				<xs:complexType>
+					<xs:all>
+						<xs:element ref="xsd:FechaOperacion"/>
+						<xs:element ref="xsd:CodEtiquetador"/>
+						<xs:element minOccurs="0" ref="xsd:NumContrato"/>
+						<xs:element minOccurs="0" ref="xsd:NumCliente"/>
+						<xs:element ref="xsd:Care"/>
+						<xs:element minOccurs="0" ref="xsd:TotalBultos"/>
+						<xs:element ref="xsd:ModDevEtiqueta"/>
+						<xs:element ref="xsd:Remitente"/>
+						<xs:element ref="xsd:Destinatario"/>
+						<xs:element ref="xsd:Envio"/>
+						<xs:element minOccurs="0" ref="xsd:EntregaParcial"/>
+						<xs:element minOccurs="0" ref="xsd:CodExpedicion"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="RespuestaPreregistroEnvio">
+				<xs:complexType>
+					<xs:all>
+						<xs:element minOccurs="0" ref="xsd:CodExpedicion"/>
+						<xs:element minOccurs="0" ref="xsd:ReferenciaExpedicion"/>
+						<xs:element minOccurs="0" ref="xsd:EntregaParcial"/>
+						<xs:element ref="xsd:FechaRespuesta"/>
+						<xs:element ref="xsd:Resultado"/>
+						<xs:element minOccurs="0" ref="xsd:TotalBultos"/>
+						<xs:element minOccurs="0" ref="xsd:Bulto"/>
+						<xs:element minOccurs="0" ref="xsd:BultoError"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<!-- ADM1169 INIT -->
+			<xs:element name="PreregistroCodExpedicion">
+				<xs:complexType>
+					<xs:all>
+						<xs:element ref="xsd:FechaOperacion"/>
+						<xs:element ref="xsd:CodEtiquetador"/>
+                        <xs:element minOccurs="0" ref="xsd:NumContrato"/>
+                        <xs:element minOccurs="0" ref="xsd:NumCliente"/>
+						<xs:element ref="xsd:Care"/>
+						<xs:element minOccurs="0" ref="xsd:TotalBultos"/>
+						<xs:element ref="xsd:ModDevEtiqueta"/>
+						<xs:element ref="xsd:Remitente"/>
+						<xs:element ref="xsd:Destinatario"/>
+						<xs:element ref="xsd:Envio"/>
+						<xs:element minOccurs="0" ref="xsd:EntregaParcial"/>
+						<xs:element minOccurs="0" ref="xsd:CodExpedicion"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			
+			<xs:element name="RespuestaPreregistroCodExpedicion">
+				<xs:complexType>
+					<xs:all>
+                        <xs:element minOccurs="0" ref="xsd:CodExpedicion"/>
+						<xs:element minOccurs="0" ref="xsd:ReferenciaExpedicion"/>
+						<xs:element minOccurs="0" ref="xsd:EntregaParcial"/>
+						<xs:element ref="xsd:FechaRespuesta"/>
+						<xs:element ref="xsd:Resultado"/>
+						<xs:element minOccurs="0" ref="xsd:TotalBultos"/>
+						<xs:element minOccurs="0" ref="xsd:Bulto"/>
+						<xs:element minOccurs="0" ref="xsd:BultoError"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			
+			<!-- ADM1169 END -->
+			
+			<!-- ADM1155 init -->
+			<xs:element name="PreregistroCodEnvio">
+				<xs:complexType>
+					<xs:all>
+						<xs:element ref="xsd:FechaOperacion"/>
+						<xs:element ref="xsd:CodEtiquetador"/>
+						<xs:element minOccurs="0" ref="xsd:NumContrato"/>
+						<xs:element minOccurs="0" ref="xsd:NumCliente"/>
+						<xs:element ref="xsd:Care"/>
+						<xs:element minOccurs="0" ref="xsd:TotalBultos"/>
+						<xs:element ref="xsd:ModDevEtiqueta"/>
+						<xs:element ref="xsd:Remitente"/>
+						<xs:element ref="xsd:Destinatario"/>
+						<xs:element ref="xsd:Envio"/>
+						<xs:element minOccurs="0" ref="xsd:EntregaParcial"/>
+						<xs:element minOccurs="0" ref="xsd:CodExpedicion"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="RespuestaPreregistroCodEnvio">
+				<xs:complexType>
+					<xs:all>
+						<xs:element minOccurs="0" ref="xsd:CodExpedicion"/>
+						<xs:element minOccurs="0" ref="xsd:ReferenciaExpedicion"/>
+						<xs:element minOccurs="0" ref="xsd:EntregaParcial"/>
+						<xs:element ref="xsd:FechaRespuesta"/>
+						<xs:element ref="xsd:Resultado"/>
+						<xs:element minOccurs="0" ref="xsd:TotalBultos"/>
+						<xs:element minOccurs="0" ref="xsd:Bulto"/>
+						<xs:element minOccurs="0" ref="xsd:BultoError"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<!-- ADM1155 end -->
+			<!-- ADM1111 init -->
+			<xs:element name="SolicitudEtiquetaRefCli">
+				<xs:complexType>
+					<xs:all>
+						<xs:element ref="xsd:FechaOperacion"/>
+						<xs:element minOccurs="0" ref="xsd:CodEtiquetador"/>
+						<xs:element minOccurs="0" ref="xsd:NumContrato"/>
+						<xs:element minOccurs="0" ref="xsd:NumCliente"/>
+						<xs:element ref="xsd:ReferenciaCliente"/>
+						<xs:element ref="xsd:ReferenciaCliente2"/>
+						<xs:element ref="xsd:ReferenciaCliente3"/>
+						<xs:element ref="xsd:Care"/>
+						<xs:element ref="xsd:ModDevEtiqueta"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="RespuestaSolicitudEtiquetaRefCli">
+				<xs:complexType>
+					<xs:all>
+						<xs:element minOccurs="0" ref="xsd:CodExpedicion"/>
+						<xs:element ref="xsd:FechaRespuesta"/>
+						<xs:element ref="xsd:Resultado"/>
+						<xs:element ref="xsd:TotalBultos"/>
+						<xs:element minOccurs="0" ref="xsd:Bulto"/>
+						<xs:element minOccurs="0" ref="xsd:BultoError"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<!-- ADM1111 end -->
+			<!-- ADM1146 init-->
+			<xs:element name="SolicitudEtiquetaExp">
+				<xs:complexType>
+					<xs:all>
+						<xs:element ref="xsd:FechaOperacion"/>
+						<xs:element minOccurs="0" ref="xsd:CodEtiquetador"/>
+						<xs:element minOccurs="0" ref="xsd:NumContrato"/>
+						<xs:element minOccurs="0" ref="xsd:NumCliente"/>
+						<xs:element ref="xsd:CodEnvio"/>
+						<xs:element ref="xsd:Care"/>
+						<xs:element ref="xsd:ModDevEtiqueta"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="RespuestaSolicitudEtiquetaExp">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" ref="xsd:CodExpedicion"/>
+						<xs:element ref="xsd:FechaRespuesta"/>
+						<xs:element ref="xsd:Resultado"/>
+						<xs:element ref="xsd:TotalBultos"/>
+						<xs:element maxOccurs="unbounded" minOccurs="0" ref="xsd:Bulto"/>
+						<xs:element minOccurs="0" ref="xsd:BultoError"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<!-- ADM1146 END -->
+			<xs:element name="SolicitudEtiqueta">
+				<xs:complexType>
+					<xs:all>
+						<xs:element ref="xsd:FechaOperacion"/>
+						<xs:element minOccurs="0" ref="xsd:CodEtiquetador"/>
+						<xs:element minOccurs="0" ref="xsd:NumContrato"/>
+						<xs:element minOccurs="0" ref="xsd:NumCliente"/>
+						<xs:element ref="xsd:CodEnvio"/>
+						<xs:element ref="xsd:Care"/>
+						<xs:element ref="xsd:ModDevEtiqueta"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="RespuestaSolicitudEtiqueta">
+				<xs:complexType>
+					<xs:all>
+						<xs:element minOccurs="0" ref="xsd:CodExpedicion"/>
+						<xs:element ref="xsd:FechaRespuesta"/>
+						<xs:element ref="xsd:Resultado"/>
+						<xs:element ref="xsd:TotalBultos"/>
+						<xs:element minOccurs="0" ref="xsd:Bulto"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="ValidarDatos">
+				<xs:complexType>
+					<xs:all>
+						<xs:element ref="xsd:FechaOperacion"/>
+						<xs:element ref="xsd:CodEtiquetador"/>
+						<xs:element minOccurs="0" ref="xsd:NumContrato"/>
+						<xs:element minOccurs="0" ref="xsd:NumCliente"/>
+						<xs:element ref="xsd:Care"/>
+						<xs:element minOccurs="0" ref="xsd:TotalBultos"/>
+						<xs:element ref="xsd:ModDevEtiqueta"/>
+						<xs:element ref="xsd:Remitente"/>
+						<xs:element ref="xsd:Destinatario"/>
+						<xs:element ref="xsd:Envio"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="RespuestaValidarDatos">
+				<xs:complexType>
+					<xs:all>
+						<xs:element ref="xsd:FechaRespuesta"/>
+						<xs:element ref="xsd:Resultado"/>
+						<xs:element minOccurs="0" ref="xsd:ErroresValidacion"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="PeticionAnular">
+				<xs:complexType>
+					<xs:all>
+						<xs:element ref="xsd:codCertificado"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="RespuestaAnular">
+				<xs:complexType>
+					<xs:all>
+						<xs:element ref="xsd:FechaRespuesta"/>
+						<xs:element ref="xsd:Resultado"/>
+						<xs:element minOccurs="0" ref="xsd:ErroresValidacion"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="PeticionModificar">
+				<xs:complexType>
+					<xs:all>
+						<xs:element ref="xsd:FechaOperacion"/>
+						<xs:element maxOccurs="1" minOccurs="1" ref="xsd:codCertificado"/>
+						<xs:element ref="xsd:CodEtiquetador"/>
+						<xs:element minOccurs="0" ref="xsd:NumContrato"/>
+						<xs:element minOccurs="0" ref="xsd:NumCliente"/>
+						<xs:element ref="xsd:Care"/>
+						<xs:element minOccurs="0" ref="xsd:TotalBultos"/>
+						<xs:element ref="xsd:ModDevEtiqueta"/>
+						<xs:element ref="xsd:RemitenteModif"/>
+						<xs:element ref="xsd:DestinatarioModif"/>
+						<xs:element ref="xsd:EnvioModif"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="RespuestaModificar">
+				<xs:complexType>
+					<xs:all>
+						<xs:element minOccurs="0" ref="xsd:CodExpedicion"/>
+						<xs:element ref="xsd:FechaRespuesta"/>
+						<xs:element ref="xsd:Resultado"/>
+						<xs:element minOccurs="0" ref="xsd:TotalBultos"/>
+						<xs:element minOccurs="0" ref="xsd:Bulto"/>
+						<xs:element minOccurs="0" ref="xsd:BultoError"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="SolicitudDocumentacionAduanera">
+				<xs:complexType>
+					<xs:all>
+						<xs:element ref="xsd:TipoESAD"/>
+						<xs:element ref="xsd:NumContrato"/>
+						<xs:element ref="xsd:NumCliente"/>
+						<xs:element ref="xsd:CodEtiquetador"/>
+						<xs:element ref="xsd:Provincia"/>
+						<xs:element ref="xsd:PaisDestino"/>
+						<xs:element ref="xsd:NombreDestinatario"/>
+						<xs:element ref="xsd:NumeroEnvios"/>
+						<xs:element minOccurs="0" ref="xsd:LocalidadFirma"/>
+						<xs:element minOccurs="0" ref="xsd:FechaFirma"/>
+						<xs:element minOccurs="0" ref="xsd:NifFirma"/>
+						<xs:element minOccurs="0" ref="xsd:NombreFirma"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="RespuestaSolicitudDocumentacionAduanera">
+				<xs:complexType>
+					<xs:all>
+						<xs:element ref="xsd:Fichero"/>
+						<xs:element ref="xsd:CodEnvio"/>
+						<xs:element ref="xsd:Resultado"/>
+						<xs:element ref="xsd:MotivoError"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="PeticionBaja">
+				<xs:complexType>
+					<xs:all>
+						<xs:element ref="xsd:codCertificado"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="RespuestaBaja">
+				<xs:complexType>
+					<xs:all>
+						<xs:element ref="xsd:FechaRespuesta"/>
+						<xs:element ref="xsd:Resultado"/>
+						<xs:element minOccurs="0" ref="xsd:ErroresValidacion"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="SolicitudDocumentacionAduaneraCN23CP71">
+				<xs:complexType>
+					<xs:all>
+						<xs:element maxOccurs="1" minOccurs="1" ref="xsd:codCertificado"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="RespuestaSolicitudDocumentacionAduaneraCN23CP71">
+				<xs:complexType>
+					<xs:all>
+						<xs:element ref="xsd:Fichero"/>
+						<xs:element ref="xsd:Resultado"/>
+						<xs:element ref="xsd:MotivoError"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="PeticionGenerarCodigoExpedicion">
+				<xs:complexType>
+					<xs:all>
+						<xs:element ref="xsd:FechaOperacion"/>
+						<xs:element ref="xsd:CodEtiquetador"/>
+						<xs:element minOccurs="0" ref="xsd:NumContrato"/>
+						<xs:element minOccurs="0" ref="xsd:NumCliente"/>
+						<xs:element minOccurs="0" ref="xsd:TotalBultos"/>
+						<xs:element ref="xsd:CodProducto"/>
+						<xs:element minOccurs="0" ref="xsd:ModalidadEntrega"/>
+						<xs:element minOccurs="0" ref="xsd:TipoFranqueo"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="RespuestaGenerarCodigoExpedicion">
+				<xs:complexType>
+					<xs:all>
+						<xs:element minOccurs="0" ref="xsd:CodExpedicion"/>
+						<xs:element ref="xsd:FechaRespuesta"/>
+						<xs:element ref="xsd:Resultado"/>
+						<xs:element minOccurs="0" ref="xsd:ErroresValidacion"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="PeticionPreRegistroIdaVta">
+				<xs:complexType>
+					<xs:all>
+						<xs:element ref="xsd:FechaOperacion"/>
+						<xs:element ref="xsd:CodEtiquetador"/>
+						<xs:element minOccurs="0" ref="xsd:NumContrato"/>
+						<xs:element minOccurs="0" ref="xsd:NumCliente"/>
+						<xs:element ref="xsd:Care"/>
+						<xs:element minOccurs="0" ref="xsd:TotalBultos"/>
+						<xs:element ref="xsd:ModDevEtiqueta"/>
+						<xs:element ref="xsd:Remitente"/>
+						<xs:element ref="xsd:Destinatario"/>
+						<xs:element ref="xsd:Envio"/>
+						<xs:element minOccurs="0" ref="xsd:EntregaParcial"/>
+						<xs:element minOccurs="0" ref="xsd:CodExpedicion"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="RespuestaPreRegistroIdaVta">
+				<xs:complexType>
+					<xs:sequence>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="xsd:CodExpedicion"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="xsd:ReferenciaExpedicion"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="xsd:EntregaParcial"/>
+                            <xs:element ref="xsd:FechaRespuesta"/>
+                            <xs:element ref="xsd:Resultado"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="xsd:TotalBultos"/>
+                            <xs:element maxOccurs="unbounded" minOccurs="0" ref="xsd:Bulto"/>
+                            <xs:element maxOccurs="1" minOccurs="0" ref="xsd:BultoError"/>
+                    </xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="PeticionReexpedicion">
+				<xs:complexType>
+					<xs:all>
+						<xs:element ref="xsd:codCertificado"/>
+						<xs:element ref="xsd:CodProducto"/>
+    					<xs:element minOccurs="0" ref="xsd:ModalidadEntrega"/>
+						<xs:element minOccurs="0" ref="xsd:DestinatarioReexp"/>
+						<xs:element minOccurs="0" ref="xsd:ValoresAnadidos"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="RespuestaReexpedicion">
+				<xs:complexType>
+					<xs:all>
+						<xs:element minOccurs="0" ref="xsd:CodEnvio"/>
+						<xs:element ref="xsd:FechaRespuesta"/>
+						<xs:element ref="xsd:Resultado"/>
+						<xs:element minOccurs="0" ref="xsd:ErroresValidacion"/>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+		</xs:schema>
+  </types>
+  <message name="DocumentacionAduaneraRequest">
+    <part element="tns:SolicitudDocumentacionAduanera" name="DocumentacionAduaneraRequest">
+    </part>
+  </message>
+  <message name="SolicitudEtiquetaExpRequest">
+    <part element="tns:SolicitudEtiquetaExp" name="SolicitudEtiquetaExpRequest">
+    </part>
+  </message>
+  <message name="PreRegistroCodEnvioRequest">
+    <part element="tns:PreregistroCodEnvio" name="PreRegistroCodEnvioRequest">
+    </part>
+  </message>
+  <message name="GenerarCodigoExpedicionResponse">
+    <part element="tns:RespuestaGenerarCodigoExpedicion" name="GenerarCodigoExpedicionResponse">
+    </part>
+  </message>
+  <message name="SolicitudEtiquetaRequest">
+    <part element="tns:SolicitudEtiqueta" name="SolicitudEtiquetaRequest">
+    </part>
+  </message>
+  <message name="BajaResponse">
+    <part element="tns:RespuestaBaja" name="BajaResponse">
+    </part>
+  </message>
+  <message name="SolicitudEtiquetaRefCliRequest">
+    <part element="tns:SolicitudEtiquetaRefCli" name="SolicitudEtiquetaRefCliRequest">
+    </part>
+  </message>
+  <message name="GenerarCodigoExpedicionRequest">
+    <part element="tns:PeticionGenerarCodigoExpedicion" name="GenerarCodigoExpedicionRequest">
+    </part>
+  </message>
+  <message name="ValidarDatosRequest">
+    <part element="tns:ValidarDatos" name="ValidarDatosRequest">
+    </part>
+  </message>
+  <message name="PreRegistroEnvioResponse">
+    <part element="tns:RespuestaPreregistroEnvio" name="PreRegistroEnvioResponse">
+    </part>
+  </message>
+  <message name="DocumentacionAduaneraCN23CP71Request">
+    <part element="tns:SolicitudDocumentacionAduaneraCN23CP71" name="DocumentacionAduaneraCN23CP71Request">
+    </part>
+  </message>
+  <message name="PreRegistroCodEnvioResponse">
+    <part element="tns:RespuestaPreregistroCodEnvio" name="PreRegistroCodEnvioResponse">
+    </part>
+  </message>
+  <message name="PreRegistroEnvioRequest">
+    <part element="tns:PreregistroEnvio" name="PreRegistroEnvioRequest">
+    </part>
+  </message>
+  <message name="ModificarResponse">
+    <part element="tns:RespuestaModificar" name="ModificarResponse">
+    </part>
+  </message>
+  <message name="DocumentacionAduaneraResponse">
+    <part element="tns:RespuestaSolicitudDocumentacionAduanera" name="DocumentacionAduaneraResponse">
+    </part>
+  </message>
+  <message name="PreRegistroCodExpedicionResponse">
+    <part element="tns:RespuestaPreregistroCodExpedicion" name="PreRegistroCodExpedicionResponse">
+    </part>
+  </message>
+  <message name="SolicitudEtiquetaRefCliResponse">
+    <part element="tns:RespuestaSolicitudEtiquetaRefCli" name="SolicitudEtiquetaRefCliResponse">
+    </part>
+  </message>
+  <message name="SolicitudEtiquetaExpResponse">
+    <part element="tns:RespuestaSolicitudEtiquetaExp" name="SolicitudEtiquetaExpResponse">
+    </part>
+  </message>
+  <message name="DocumentacionAduaneraCN23CP71Response">
+    <part element="tns:RespuestaSolicitudDocumentacionAduaneraCN23CP71" name="DocumentacionAduaneraCN23CP71Response">
+    </part>
+  </message>
+  <message name="SolicitudEtiquetaResponse">
+    <part element="tns:RespuestaSolicitudEtiqueta" name="SolicitudEtiquetaResponse">
+    </part>
+  </message>
+  <message name="AnularResponse">
+    <part element="tns:RespuestaAnular" name="AnularResponse">
+    </part>
+  </message>
+  <message name="PreRegistroIdaVtaResponse">
+    <part element="tns:RespuestaPreRegistroIdaVta" name="PreRegistroIdaVtaResponse">
+    </part>
+  </message>
+  <message name="PreRegistroIdaVtaRequest">
+    <part element="tns:PeticionPreRegistroIdaVta" name="PreRegistroIdaVtaRequest">
+    </part>
+  </message>
+  <message name="PreRegistroCodExpedicionRequest">
+    <part element="tns:PreregistroCodExpedicion" name="PreRegistroCodExpedicionRequest">
+    </part>
+  </message>
+  <message name="AnularRequest">
+    <part element="tns:PeticionAnular" name="AnularRequest">
+    </part>
+  </message>
+  <message name="BajaRequest">
+    <part element="tns:PeticionBaja" name="BajaRequest">
+    </part>
+  </message>
+  <message name="ModificarRequest">
+    <part element="tns:PeticionModificar" name="ModificarRequest">
+    </part>
+  </message>
+  <message name="ValidarDatosResponse">
+    <part element="tns:RespuestaValidarDatos" name="ValidarDatosResponse">
+    </part>
+  </message>
+  <message name="ReexpedicionRequest">
+    <part element="tns:PeticionReexpedicion" name="ReexpedicionRequest">
+    </part>
+  </message>
+  <message name="ReexpedicionResponse">
+    <part element="tns:RespuestaReexpedicion" name="ReexpedicionResponse">
+    </part>
+  </message>
+  <portType name="PreRegistroPort">
+    <operation name="PreRegistro">
+      <input message="tns:PreRegistroEnvioRequest" name="PreRegistroEnvioRequest">
+    </input>
+      <output message="tns:PreRegistroEnvioResponse" name="PreRegistroEnvioResponse">
+    </output>
+    </operation>
+    <operation name="PreRegistroCodEnvio">
+      <input message="tns:PreRegistroCodEnvioRequest" name="PreRegistroCodEnvioRequest">
+    </input>
+      <output message="tns:PreRegistroCodEnvioResponse" name="PreRegistroCodEnvioResponse">
+    </output>
+    </operation>
+    <operation name="PreRegistroCodExpedicion">
+      <input message="tns:PreRegistroCodExpedicionRequest" name="PreRegistroCodExpedicionRequest">
+    </input>
+      <output message="tns:PreRegistroCodExpedicionResponse" name="PreRegistroCodExpedicionResponse">
+    </output>
+    </operation>
+    <operation name="SolicitudEtiquetaRefCliOp">
+      <input message="tns:SolicitudEtiquetaRefCliRequest" name="SolicitudEtiquetaRefCliRequest">
+    </input>
+      <output message="tns:SolicitudEtiquetaRefCliResponse" name="SolicitudEtiquetaRefCliResponse">
+    </output>
+    </operation>
+    <operation name="SolicitudEtiquetaExpOp">
+      <input message="tns:SolicitudEtiquetaExpRequest" name="SolicitudEtiquetaExpRequest">
+    </input>
+      <output message="tns:SolicitudEtiquetaExpResponse" name="SolicitudEtiquetaExpResponse">
+    </output>
+    </operation>
+    <operation name="SolicitudEtiquetaOp">
+      <input message="tns:SolicitudEtiquetaRequest" name="SolicitudEtiquetaRequest">
+    </input>
+      <output message="tns:SolicitudEtiquetaResponse" name="SolicitudEtiquetaResponse">
+    </output>
+    </operation>
+    <operation name="ValidarDatosOp">
+      <input message="tns:ValidarDatosRequest" name="ValidarDatosRequest">
+    </input>
+      <output message="tns:ValidarDatosResponse" name="ValidarDatosResponse">
+    </output>
+    </operation>
+    <operation name="AnularOp">
+      <input message="tns:AnularRequest" name="AnularRequest">
+    </input>
+      <output message="tns:AnularResponse" name="AnularResponse">
+    </output>
+    </operation>
+    <operation name="ModificarOp">
+      <input message="tns:ModificarRequest" name="ModificarRequest">
+    </input>
+      <output message="tns:ModificarResponse" name="ModificarResponse">
+    </output>
+    </operation>
+    <operation name="DocumentacionAduaneraOp">
+      <input message="tns:DocumentacionAduaneraRequest" name="DocumentacionAduaneraRequest">
+    </input>
+      <output message="tns:DocumentacionAduaneraResponse" name="DocumentacionAduaneraResponse">
+    </output>
+    </operation>
+    <operation name="BajaOp">
+      <input message="tns:BajaRequest" name="BajaRequest">
+    </input>
+      <output message="tns:BajaResponse" name="BajaResponse">
+    </output>
+    </operation>
+    <operation name="DocumentacionAduaneraCN23CP71Op">
+      <input message="tns:DocumentacionAduaneraCN23CP71Request" name="DocumentacionAduaneraCN23CP71Request">
+    </input>
+      <output message="tns:DocumentacionAduaneraCN23CP71Response" name="DocumentacionAduaneraCN23CP71Response">
+    </output>
+    </operation>
+    <operation name="GenerarCodigoExpedicionOp">
+      <input message="tns:GenerarCodigoExpedicionRequest" name="GenerarCodigoExpedicionRequest">
+    </input>
+      <output message="tns:GenerarCodigoExpedicionResponse" name="GenerarCodigoExpedicionResponse">
+    </output>
+    </operation>
+    <operation name="PreRegistroIdaVuelta">
+      <input message="tns:PreRegistroIdaVtaRequest" name="PreRegistroIdaVtaRequest">
+    </input>
+      <output message="tns:PreRegistroIdaVtaResponse" name="PreRegistroIdaVtaResponse">
+    </output>
+    </operation>
+    <operation name="Reexpedicion">
+      <input message="tns:ReexpedicionRequest" name="ReexpedicionRequest">
+    </input>
+      <output message="tns:ReexpedicionResponse" name="ReexpedicionResponse">
+    </output>
+    </operation>
+  </portType>
+  <binding name="PreRegistroSoapBinding" type="tns:PreRegistroPort">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="PreRegistro">
+      <soap:operation soapAction="PreRegistro" style="document"/>
+      <input name="PreRegistroEnvioRequest">
+        <soap:body use="literal"/>
+      </input>
+      <output name="PreRegistroEnvioResponse">
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PreRegistroCodEnvio">
+      <soap:operation soapAction="PreRegistroCodEnvio" style="document"/>
+      <input name="PreRegistroCodEnvioRequest">
+        <soap:body use="literal"/>
+      </input>
+      <output name="PreRegistroCodEnvioResponse">
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PreRegistroCodExpedicion">
+      <soap:operation soapAction="PreRegistroCodExpedicion" style="document"/>
+      <input name="PreRegistroCodExpedicionRequest">
+        <soap:body use="literal"/>
+      </input>
+      <output name="PreRegistroCodExpedicionResponse">
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="SolicitudEtiquetaRefCliOp">
+      <soap:operation soapAction="SolicitudEtiquetaRefCliOp" style="document"/>
+      <input name="SolicitudEtiquetaRefCliRequest">
+        <soap:body use="literal"/>
+      </input>
+      <output name="SolicitudEtiquetaRefCliResponse">
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="SolicitudEtiquetaExpOp">
+      <soap:operation soapAction="SolicitudEtiquetaExpOp" style="document"/>
+      <input name="SolicitudEtiquetaExpRequest">
+        <soap:body use="literal"/>
+      </input>
+      <output name="SolicitudEtiquetaExpResponse">
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="SolicitudEtiquetaOp">
+      <soap:operation soapAction="SolicitudEtiquetaOp" style="document"/>
+      <input name="SolicitudEtiquetaRequest">
+        <soap:body use="literal"/>
+      </input>
+      <output name="SolicitudEtiquetaResponse">
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ValidarDatosOp">
+      <soap:operation soapAction="ValidarDatosOp" style="document"/>
+      <input name="ValidarDatosRequest">
+        <soap:body use="literal"/>
+      </input>
+      <output name="ValidarDatosResponse">
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AnularOp">
+      <soap:operation soapAction="AnularOp" style="document"/>
+      <input name="AnularRequest">
+        <soap:body use="literal"/>
+      </input>
+      <output name="AnularResponse">
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="ModificarOp">
+      <soap:operation soapAction="ModificarOp" style="document"/>
+      <input name="ModificarRequest">
+        <soap:body use="literal"/>
+      </input>
+      <output name="ModificarResponse">
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="DocumentacionAduaneraOp">
+      <soap:operation soapAction="DocumentacionAduaneraOp" style="document"/>
+      <input name="DocumentacionAduaneraRequest">
+        <soap:body use="literal"/>
+      </input>
+      <output name="DocumentacionAduaneraResponse">
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="BajaOp">
+      <soap:operation soapAction="BajaOp" style="document"/>
+      <input name="BajaRequest">
+        <soap:body use="literal"/>
+      </input>
+      <output name="BajaResponse">
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="DocumentacionAduaneraCN23CP71Op">
+      <soap:operation soapAction="DocumentacionAduaneraCN23CP71Op" style="document"/>
+      <input name="DocumentacionAduaneraCN23CP71Request">
+        <soap:body use="literal"/>
+      </input>
+      <output name="DocumentacionAduaneraCN23CP71Response">
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GenerarCodigoExpedicionOp">
+      <soap:operation soapAction="GenerarCodigoExpedicionOp" style="document"/>
+      <input name="GenerarCodigoExpedicionRequest">
+        <soap:body use="literal"/>
+      </input>
+      <output name="GenerarCodigoExpedicionResponse">
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="PreRegistroIdaVuelta">
+      <soap:operation soapAction="PreRegistroIdaVuelta" style="document"/>
+      <input name="PreRegistroIdaVtaRequest">
+        <soap:body use="literal"/>
+      </input>
+      <output name="PreRegistroIdaVtaResponse">
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="Reexpedicion">
+      <soap:operation soapAction="Reexpedicion" style="document"/>
+      <input name="ReexpedicionRequest">
+        <soap:body use="literal"/>
+      </input>
+      <output name="ReexpedicionResponse">
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="PreRegistroService">
+    <port binding="tns:PreRegistroSoapBinding" name="PreRegistroSoapBinding">
+      <soap:address location="https://preregistroenvios.correos.es/preregistroenvios"/>
+    </port>
+  </service>
+</definitions>

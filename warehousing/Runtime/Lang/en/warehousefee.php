@@ -1,0 +1,2 @@
+<?php
+return array ( 'warehouse_fee_basic' => 'storage fees basic information', 'warehouse_fee_detail' => 'storage fee details', 'free_days' => 'Free Days', 'over_year' => 'Over Year', 'warehouse_fee_delete_error' => 'This record has been used in the process, cannot be deleted!', ); ?>

@@ -1,0 +1,17 @@
+ {ytt_table 
+	show=[
+			["value"=>"bank_name","title"=>$lang.out_remittance_account_name,"width"=>"10%"],
+			["value"=>"in_bank_name","title"=>$lang.in_remittance_account_name,"width"=>"8%"],
+			["value"=>"fmd_delivery_date","title"=>$lang.date,"width"=>"8%"],
+			["value"=>"currency_no","title"=>$lang.currency_no,"width"=>"7%"],
+			["value"=>"dml_quantity","title"=>$lang.execute_quantity,"width"=>"5%"],
+			["value"=>"dml_money","title"=>$lang.money,"width"=>"10%"],
+			["value"=>"dml_real_money","title"=>$lang.total_money,"width"=>"10%"],
+			["value"=>"dml_other_money","title"=>$lang.other_cost,"width"=>"10%"],
+			["value"=>"dml_sum_other_money","title"=>$lang.sum_other_cost,"width"=>"10%"], 
+			["value"=>"edit_comments","title"=>$lang.comments]
+		]
+	sort=["paid_date"=>["sort_by"=>0,"sort_action"=>"index"]]
+	listType='flow'
+	from=$list.list
+} 

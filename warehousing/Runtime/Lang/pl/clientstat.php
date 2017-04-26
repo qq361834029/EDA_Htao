@@ -1,0 +1,2 @@
+<?php
+return array ( 'expand_sale_detail' => 'Szczegóły umowa ekspansji', 'date' => 'Data Domyślnie', 'should_paid' => 'Razem', 'have_paid' => 'posiada należności', 'need_paid' => 'nie wymaga', 'use_paid' => 'Nie przypisane kwoty', 'funds' => 'Otwórz ilość', 'mobile' => 'Komórka', 'preferential_money' => 'Zaproponuj cenę', 'sent_email' => 'Wyślij e-mail', ); ?>

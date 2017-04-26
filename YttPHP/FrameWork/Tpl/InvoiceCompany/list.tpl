@@ -1,0 +1,9 @@
+{ytt_table
+	show=[
+		['title'=>$lang.basic_name,'value'=>'company_name',"link"=>['url'=>'InvoiceCompany/view',"link_id"=>['id'=>'id']],"width"=>"20%"],
+		['title'=>$lang.address,'value'=>'address',"width"=>"25%"],
+		['title'=>$lang.bank_account,'value'=>'bank_account',"width"=>"18%"],
+		['title'=>$lang.comments,'value'=>'comments']
+	]
+	from=$list.list
+}

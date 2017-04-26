@@ -1,0 +1,2 @@
+<?php
+return array ( 0 => 'id', 1 => 'user_id', 2 => 'model', 3 => 'action', 4 => 'extend', 5 => 'menu_order', '_autoinc' => false, '_type' => array ( 'id' => 'int(10) unsigned', 'user_id' => 'int(10) unsigned', 'model' => 'varchar(100)', 'action' => 'varchar(100)', 'extend' => 'varchar(50)', 'menu_order' => 'tinyint(3) unsigned', ), ); ?>

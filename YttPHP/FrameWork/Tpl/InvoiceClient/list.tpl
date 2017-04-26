@@ -1,0 +1,10 @@
+{ytt_table
+	show=[
+		['title'=>$lang.client_name,'value'=>'company_name'],
+		['title'=>'IVA','value'=>'iva'],
+		['title'=>$lang.basic_client,'value'=>'client_name'],
+		['title'=>$lang.tax_no,'value'=>'tax_no'],
+		['title'=>$lang.address,'value'=>'address']
+	]
+	from=$list.list
+}

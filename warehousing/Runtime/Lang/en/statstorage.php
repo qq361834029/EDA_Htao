@@ -1,0 +1,2 @@
+<?php
+return array ( 'init_quantity' => 'quantity brought forward', 'intock_total' => 'quantity of entered warehosue', 'outtock_total' => 'quantity of exited warehouse', 'adjust_quantity' => 'adjust total number', 'closing_quantity' => 'CLOSING iNVENTRY', ); ?>

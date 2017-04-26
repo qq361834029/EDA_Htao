@@ -1,0 +1,2 @@
+<?php
+return array ( 'weight' => 'peso del prodotto ', 'product_size_notice' => '(se con la confezione, compilare il volume della confezione)', 'product_weight_notice' => '(Se con la confezione, basta compilare il peso totale) ', 'import_sku' => 'SKU esterno', ); ?>

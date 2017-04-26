@@ -1,0 +1,2 @@
+<?php
+return array ( 'start_adjust_date' => 'Modificar la fecha desde', 'adjust_total' => 'Modificar Cant.', 'adjust_detail' => 'Modificar detalles', 'adjust_basic' => 'Modificar información básico', ); ?>

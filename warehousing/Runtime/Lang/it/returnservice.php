@@ -1,0 +1,2 @@
+<?php
+return array ( 'return_service_no' => 'il servizio reso', 'return_service_name' => 'nome di servizio reso', 'service_project' => 'voci di servizio', 'item_number' => 'numero di voci', 'item_name' => 'nome di voci', 'is_return_service' => 'è disponibile il servizio reso', ); ?>

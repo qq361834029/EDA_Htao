@@ -1,0 +1,45 @@
+body {
+    padding:0;
+	font-size:12px;
+	font-family: Verdana,"宋体",Helvetica,sans-serif;
+	margin:0 auto;
+	color:#000000;
+	font-weight: normal;
+	width: 100%
+}
+table{padding:0; margin:0;border-collapse: collapse;}
+ul,li,ol,dl,dt,dd{padding:0; margin:0; list-style:none;}
+.word14{font-size:14px!important;}
+.tbold{ font-weight:bold;}
+
+.t_left{text-align:left !important;}
+.t_right{text-align:right !important;}
+.t_center{text-align:center !important;}
+.b_top{border-top-style:none!important;}
+.b_left{border-left-style:none!important;}
+.b_right{border-right-style:none!important;}
+.b_bottom{border-bottom-style:none!important;}
+
+/*最外面的表*/
+.table_out{
+	margin:0px auto; 	
+	width:726px!important;
+	font-size:12px!important;}
+
+/*开发票公司信息表*/
+.table_company{margin:0px auto; /*background-color:#D4D3D3;*/}
+.table_company td{text-align:left;line-height:22px;padding-left:5px;}
+
+/*公司信息表*/
+.table_othercompany{width:80%; line-height:26px; text-align:left; font-size:14px;border: 1px solid #000000; margin:30px 0; padding-left:10px;min-height:104px;}
+.table_fdc{margin:0px auto;width:100%;}
+.table_fdc th{border: 1px solid #000000; background-color:#EBEBEB;line-height:24px;}
+.table_fdc td{border: 1px solid #000000; text-align:center; line-height:24px; padding-right:5px;height:24px;}
+.detail{
+	margin:0px auto; 
+	width:726px!important;
+	font-size:12px!important;
+	border-radius: 5px;}
+
+.detail th{border: 1px solid #000000; background-color:#EBEBEB;line-height:24px!important; height:24px!important;}
+.detail td{border: 1px solid #000000; text-align:right; padding-left:5px;padding-right:5px;}

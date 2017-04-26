@@ -1,0 +1,14 @@
+{ytt_table 
+	show=[
+			["value"=>"account_name","title"=>$lang.pay_bank,"link"=>['url'=>'Bank/view',"link_id"=>['id'=>'id']]],
+			["value"=>"bank_name","title"=>$lang.bank_name],
+			["value"=>"currency_no","title"=>$lang.currency_name],
+			["value"=>"account","title"=>$lang.account],
+			["value"=>"contact","title"=>$lang.account_holder],
+			["value"=>"swift_code","title"=>$lang.swift],
+			["value"=>"comments","title"=>$lang.comment]
+		]
+	sort=["bank_name"=>["sort_by"=>0,"sort_action"=>"index"]]
+	from=$list.list
+	operate=$admin
+}

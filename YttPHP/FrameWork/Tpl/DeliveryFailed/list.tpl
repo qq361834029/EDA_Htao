@@ -1,0 +1,13 @@
+{ytt_table 
+show=[
+	["value"=>"sale_order_no","title"=>$lang.deal_no,"link"=>["url"=>"DeliveryFailed/view","link_id"=>"id"],"font_class"=>["order_state"=>[2=>"red","1"=>"green"]]],
+	["value"=>"order_no","title"=>$lang.orderno,"link"=>["url"=>"DeliveryFailed/view","link_id"=>"id"],"font_class"=>["order_state"=>[2=>"red","1"=>"green"]]],
+	["value"=>"w_name","title"=>$lang.warehouse_name],
+	["value"=>"product_detail_info","title"=>$lang.outstock_product_detail_info],
+	["value"=>"ship_name","title"=>$lang.express_way]
+]
+listType='flow'
+flow="sale"
+from=$list.list
+operate=false
+}

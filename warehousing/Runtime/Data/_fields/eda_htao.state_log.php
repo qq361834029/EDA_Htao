@@ -1,0 +1,2 @@
+<?php
+return array ( 0 => 'id', 1 => 'object_type', 2 => 'object_id', 3 => 'state_id', 4 => 'user_id', 5 => 'create_time', 6 => 'comments', '_autoinc' => false, '_type' => array ( 'id' => 'int(10) unsigned', 'object_type' => 'tinyint(3) unsigned', 'object_id' => 'int(10) unsigned', 'state_id' => 'tinyint(3) unsigned', 'user_id' => 'int(10) unsigned', 'create_time' => 'datetime', 'comments' => 'varchar(255)', ), ); ?>

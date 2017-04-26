@@ -1,0 +1,2 @@
+<?php
+return array ( 'expand_sale_detail' => '展开销售单明细', 'date' => '欠款日期', 'should_paid' => '应收款', 'have_paid' => '已收款', 'need_paid' => '未收款', 'use_paid' => '未分配金额', 'funds' => '欠款', 'mobile' => '手机', 'preferential_money' => '优惠金额', 'sent_email' => '发送邮件', ); ?>

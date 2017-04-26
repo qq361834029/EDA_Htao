@@ -1,0 +1,2 @@
+<?php
+return array ( 'byorderno_comment' => 'attention: maximum 50 orders, fill in changing the line', 'byorderno' => 'Orders synchronization - according to the transaction number', 'byorderdate' => 'Orders synchronization - according to the transaction date', 'common' => 'select success', ); ?>

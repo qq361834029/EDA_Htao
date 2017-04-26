@@ -1,0 +1,2 @@
+<?php
+return array ( 'p_name' => 'Nom de Caractéristique attribué', 'pv_name' => 'Nom de la valeur de propriété', 'pv_no' => 'ID de la valeur de caractéristique', 'title_2' => 'Infos liées à la propriété', 'title_1' => 'Info valeur Caractéristique', ); ?>

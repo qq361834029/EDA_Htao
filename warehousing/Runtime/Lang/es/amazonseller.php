@@ -1,0 +1,2 @@
+<?php
+return array ( 'byorderno_comment' => 'Nota: Puede introduzcir un máximo de 50 N.s de pedido', 'byorderno' => 'Sincronizar pedido - por N. de transacción', 'byorderdate' => 'Sincronizar pedido - por fecha', 'common' => 'Extracción realizada con éxito', ); ?>

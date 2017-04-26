@@ -1,0 +1,12 @@
+{ytt_table 
+	table_attr=$table_attr
+	tr_attr=$tr_attr
+	show=[
+			["value"=>"class_no","title"=>$lang.class_no],
+			["value"=>"class_name","title"=>$lang.class_name] 
+		]
+	expand=$expand
+	expandAction=$expandAction
+	from=$list 
+	module_name='ProductClass'
+}

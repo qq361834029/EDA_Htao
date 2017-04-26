@@ -1,0 +1,2 @@
+<?php
+return array ( 'p_name' => 'Mit Attribut Namen verbunden', 'pv_name' => 'Name der Attributwerte', 'pv_no' => 'Attribut-Wert', 'title_2' => 'Attribute verbundene Information', 'title_1' => 'Information Attributwert', ); ?>

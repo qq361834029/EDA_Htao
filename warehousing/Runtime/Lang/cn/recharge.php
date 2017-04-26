@@ -1,0 +1,2 @@
+<?php
+return array ( 'recharge_date' => '充值日期', 'recharge_money' => '充值金额', 'payment_document' => '汇款凭证', 'edit_charge' => '编辑充值', 'confirm_money' => '确认金额', 'recharge_confirm' => '充值确认', 'confirm_money_over_money' => '确认金额不得超过充值金额', 'no_upload_payment' => '请上传汇款凭证', ); ?>

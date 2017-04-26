@@ -1,0 +1,2 @@
+<?php
+return array ( 'init_quantity' => 'Liczba pierwsza', 'intock_total' => 'Razem przechowywania', 'outtock_total' => 'Razem outsourcingu', 'adjust_quantity' => 'Regulowania całkowitej liczby', 'closing_quantity' => 'Numer Koniec', ); ?>

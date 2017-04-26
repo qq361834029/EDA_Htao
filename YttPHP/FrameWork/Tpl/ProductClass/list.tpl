@@ -1,0 +1,10 @@
+{ytt_table 
+	show=[
+			["value"=>"class_no","title"=>$lang.class_no],
+			["value"=>"class_name","title"=>$lang.class_name] 
+		]
+	expand=$expand
+	expandAction="getProductClassList"	
+	sort=["class_no"=>["sort_by"=>0,"sort_action"=>"index"]]
+	from=$list.list
+}

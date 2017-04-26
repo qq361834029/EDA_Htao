@@ -1,0 +1,15 @@
+{ytt_table 
+	show=[
+			["value"=>"file_list_no","title"=>$lang.picking_no],
+			["value"=>"w_name","title"=>$lang.warehouse_name],
+			["value"=>"barcode_no","title"=>$lang.location_no],
+			["value"=>"product_id","title"=>$lang.product_id],
+			["value"=>"product_no","title"=>$lang.product_no],
+			["value"=>"dml_quantity","title"=>$lang.quantity],
+			["value"=>"edit_comments","title"=>$lang.error_cause],
+			["value"=>"dd_import_state","title"=>$lang.process_state],
+			["value"=>"add_real_name","title"=>$lang.doc_process_staff],
+			["value"=>"fmd_update_time","title"=>$lang.doc_process_date]
+		]
+	from=$list.list
+}

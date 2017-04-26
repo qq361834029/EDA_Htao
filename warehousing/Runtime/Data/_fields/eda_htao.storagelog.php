@@ -1,0 +1,2 @@
+<?php
+return array ( 0 => 'id', 1 => 'main_id', 2 => 'detail_id', 3 => 'relation_type', 4 => 'warehouse_id', 5 => 'location_id', 6 => 'product_id', 7 => 'quantity', 8 => 'insert_time', '_autoinc' => false, '_type' => array ( 'id' => 'int(11) unsigned', 'main_id' => 'int(11) unsigned', 'detail_id' => 'int(11)', 'relation_type' => 'int(1)', 'warehouse_id' => 'int(5)', 'location_id' => 'int(11)', 'product_id' => 'int(11)', 'quantity' => 'int(11)', 'insert_time' => 'timestamp', ), ); ?>

@@ -1,0 +1,2 @@
+<?php
+return array ( 'return_service_no' => 'Lettre Service', 'return_service_name' => 'Nom Serv. Retour-Prod.', 'service_project' => 'Programme Service', 'item_number' => 'N° Prog.', 'item_name' => 'Nom Prog.', 'is_return_service' => 'Service Retour-Prod.', ); ?>

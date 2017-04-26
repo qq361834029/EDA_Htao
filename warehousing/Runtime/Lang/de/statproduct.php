@@ -1,0 +1,2 @@
+<?php
+return array ( 'flow_name' => 'Prozessname', 'increase' => 'erhöhen', 'reduce' => 'zurückschneiden', 'sale_qn' => 'Kundenauftrag', 'adjust_qn' => 'Lageranpassung', 'head_way_storage' => 'Einlagerung in China', ); ?>

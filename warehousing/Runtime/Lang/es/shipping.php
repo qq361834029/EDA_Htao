@@ -1,0 +1,2 @@
+<?php
+return array ( 'zip_limit' => 'Intervalo de código postal', 'is_express' => 'Entrega domicilio Si/No', 'bulk' => 'Volumen', 'shipping_no' => 'Código del método de envío', 'whether_api_enabled' => '¿Utilizar API?', ); ?>

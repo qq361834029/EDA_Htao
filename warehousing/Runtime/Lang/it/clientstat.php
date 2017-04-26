@@ -1,0 +1,2 @@
+<?php
+return array ( 'expand_sale_detail' => 'estende i dettagli di vendita', 'date' => 'data di pagamento non effettuato', 'should_paid' => 'debito da incassare', 'have_paid' => 'importo pagato', 'need_paid' => 'importo da incassare', 'use_paid' => 'importo non distribuito', 'funds' => 'importo non pagato', 'mobile' => 'cellulare', 'preferential_money' => 'importo scontato', 'sent_email' => 'Invia e-mail ', ); ?>

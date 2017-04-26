@@ -1,0 +1,2 @@
+<?php
+return array ( 'flow_name' => 'nome di processo', 'increase' => 'aumentare', 'reduce' => 'diminuire', 'sale_qn' => 'ordine di vendita', 'adjust_qn' => '库存调整数量', 'head_way_storage' => 'immagazzinamento dall\'arrivo', ); ?>

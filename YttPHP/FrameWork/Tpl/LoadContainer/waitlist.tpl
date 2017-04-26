@@ -1,0 +1,18 @@
+{ytt_table
+	show=[
+			["value"=>"order_no","title"=>$lang.order_no,"link"=>["link_id"=>"orders_id"]],
+			["value"=>"factory_name","title"=>$lang.factory_name,'link'=>['url'=>'Factory/view','link_id'=>['id'=>'factory_id']]],
+			["value"=>"product_qn","title"=>$lang.product_qn],
+			["value"=>"fmd_order_date","title"=>$lang.order_date],
+			["value"=>"fmd_expect_date","title"=>$lang.expect_date],
+			["value"=>"dml_sum_capability","title"=>$lang.index_sum_quantity,'type'=>'flow_storage_format'],
+			["value"=>"dml_sun_quantity","title"=>$lang.sum_quantity],
+			["value"=>"dml_money","title"=>$lang.total_money],
+			["value"=>"dml_load_capability","title"=>$lang.real_sum_load_quantity,'flow'=>'order','type'=>'flow_storage_format'],
+			["value"=>"dml_load_quantity","title"=>$lang.index_sum_load_quantity]
+		]
+	listType='flow'
+	flow="order" 
+	operate=false
+	from=$list.list
+}

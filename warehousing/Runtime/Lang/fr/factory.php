@@ -1,0 +1,2 @@
+<?php
+return array ( 'vat_number' => 'N° de la taxe sur la valeur ajoutée', 'reg_number' => 'N° d\'enregistrement professionel', 'house_bank' => 'Ouverture compte banquaire', 'account_holder' => 'Nom de titulaire', 'bank_code' => 'code banque', 'iban_account' => 'Iban de compte bancaire', 'upload_logo' => 'Importer le logo', 'web' => 'L\'adresse URL', 'auto_shipping' => '智能派送', ); ?>

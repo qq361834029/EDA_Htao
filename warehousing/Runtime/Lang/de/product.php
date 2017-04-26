@@ -1,0 +1,2 @@
+<?php
+return array ( 'weight' => 'Produktgewicht', 'product_size_notice' => '(nur in der Packungsgröße zu füllen)', 'product_weight_notice' => '(nur in das Gesamtgewicht zu füllen)', 'import_sku' => 'externe SKU', ); ?>

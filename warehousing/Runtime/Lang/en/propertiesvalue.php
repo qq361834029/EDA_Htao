@@ -1,0 +1,2 @@
+<?php
+return array ( 'p_name' => 'Associate attribute name', 'pv_name' => 'Property Value Name', 'pv_no' => 'Attribute Value ID', 'title_2' => 'Property-related information', 'title_1' => 'Attribute value information', ); ?>

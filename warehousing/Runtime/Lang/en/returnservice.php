@@ -1,0 +1,2 @@
+<?php
+return array ( 'return_service_no' => 'return service ID', 'return_service_name' => 'return service name', 'service_project' => 'service project', 'item_number' => 'project number', 'item_name' => 'project name', 'is_return_service' => 'Choose return service or not?', ); ?>

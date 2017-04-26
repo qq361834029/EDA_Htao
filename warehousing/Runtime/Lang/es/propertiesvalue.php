@@ -1,0 +1,2 @@
+<?php
+return array ( 'p_name' => 'Nombre de la asociación de propiedades', 'pv_name' => 'Nombre de propiedad', 'pv_no' => 'Código de propiedad', 'title_2' => 'Información relacionada de propiedades', 'title_1' => 'Información de propiedad', ); ?>

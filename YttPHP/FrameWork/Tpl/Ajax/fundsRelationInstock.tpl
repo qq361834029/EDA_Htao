@@ -1,0 +1,32 @@
+<div class="basic_tb">  
+<ul> 
+	<li>
+		{$lang.delivery_no}：
+		{$rs.instock_no}
+	</li>
+	<li>
+		{$lang.go_date}： 
+		{$rs.fmd_go_date}
+	</li>
+	<li>
+		{$lang.total_box_quantity}： 
+		{$rs.dml_quantity}
+	</li>
+	<li>
+		{$lang.weight_with_unit}： 
+		{$rs.dml_weight}
+	</li>
+	<li>
+		{$lang.head_way}：
+		{$rs.dd_head_way}
+	</li>
+	<li>
+		{$lang.real_arrive_date}： 
+		{$rs.fmd_real_arrive_date}
+	</li>
+	<li>
+		{$lang.state}： 
+		{$rs.dd_instock_type}
+	</li>	
+</ul>
+</div>

@@ -1,0 +1,2 @@
+<?php
+return array ( 'get_address' => 'Adresse de Récupération', 'box_detail_info' => 'Infos Détaillé Charg-Carton', 'add_box' => 'Ajouter nouveau N° boite', 'del_box' => 'Supprimer N° Carton', 'spec_error' => 'Caracteristiques produit redoublons', 'hold' => 'Sauvegarder et Suivant', 'instock_no' => 'N° d\'expédition', 'no_delete_box' => 'Veuillez supprimer le produit incluse dans ce carton', 'client_comments' => 'Note vendeur', 'delivery_pics' => 'Image d\'expédition', 'invoice_pics' => 'Image de Facture', 'has_instock_cant_delete' => '产品已入库不能删除！', ); ?>

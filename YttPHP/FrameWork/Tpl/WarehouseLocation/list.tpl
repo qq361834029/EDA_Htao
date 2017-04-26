@@ -1,0 +1,15 @@
+{ytt_table
+	show=[
+		["value"=>"w_no","title"=>$lang.warehouse_no,"link"=>['url'=>'Warehouse/view',"link_id"=>['id'=>'warehouse_id']]],
+		["value"=>"w_name","title"=>$lang.belongs_warehouse,"link"=>['url'=>'Warehouse/view',"link_id"=>['id'=>'warehouse_id']],"width"=>"15%"],
+		["value"=>"dd_zone_type","title"=>$lang.zone_type,"width"=>"8%"],
+		["value"=>"location_no","title"=>$lang.reservoir_no,"width"=>"8%"],
+		["value"=>"col_number","title"=>$lang.shelves_cols,"width"=>"8%"],
+		["value"=>"layer_start","title"=>$lang.starting_layers,"width"=>"8%"],
+		["value"=>"layer_number","title"=>$lang.shelves_layers,"width"=>"8%"],
+		["value"=>"box_number","title"=>$lang.layer_boxs,"width"=>"8%"],
+		["value"=>"path_sort","title"=>$lang.path_sort,"width"=>"10%"],
+		["value"=>"comments","title"=>$lang.comments]
+	]
+	from=$list.list
+}

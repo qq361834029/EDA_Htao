@@ -1,0 +1,2 @@
+<?php
+return array ( 'get_address' => 'Abholadresse', 'box_detail_info' => 'Verpackungsdetails', 'add_box' => 'Neue Boxnummer', 'del_box' => 'Löschen Boxnummer', 'spec_error' => 'Produktspezifikation wiederholen', 'hold' => 'Speichern und Weiter', 'instock_no' => 'Rechnungsnummer', 'no_delete_box' => 'Bitte entfernen Sie Produkte, die unter der Boxnummer!', 'client_comments' => 'Hinweis Verkäufer', 'delivery_pics' => 'Sendungsfotos', 'invoice_pics' => 'Rechnungen Bilder', 'has_instock_cant_delete' => '产品已入库不能删除！', ); ?>

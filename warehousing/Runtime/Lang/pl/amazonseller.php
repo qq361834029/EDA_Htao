@@ -1,0 +1,2 @@
+<?php
+return array ( 'byorderno_comment' => 'Uwaga: Możesz wybrać maksymalnie 50 miejsc pracy', 'byorderno' => 'Synchronizacja przez numer zamówienia', 'byorderdate' => 'Synchronizacja przez Najnowszy', 'common' => 'Sukces Crawl', ); ?>

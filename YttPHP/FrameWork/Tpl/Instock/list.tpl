@@ -1,0 +1,23 @@
+{ytt_table
+	show=[
+			["value"=>"instock_no","title"=>$lang.instock_no,"link"=>["link_id"=>"instock_id","title"=>$lang.view]],
+			["value"=>"fmd_delivery_date","title"=>$lang.delivery_date],
+			["value"=>"dd_head_way","title"=>$lang.head_way],
+			["value"=>"logistics_name","title"=>$lang.logistics],
+			["value"=>"w_name","title"=>$lang.destination,'type'=>'flow_multi_storage'],
+			["value"=>"container_no","title"=>$lang.logistics_no],
+			["value"=>"fmd_go_date","title"=>$lang.go_date],
+			["value"=>"fmd_arrive_date","title"=>$lang.arrive_date],
+			["value"=>"fmd_real_arrive_date","title"=>$lang.real_arrive_date],
+			["value"=>"dd_instock_type","title"=>$lang.state,'span'=>['onclick'=>"$.autoShow(this,'Instock','state_log')"],
+				'hidden'=>[
+					['name'=>'object_id','id'=>'object_id','value'=>'id']
+					  ]
+			],
+			["value"=>"factory_name","title"=>$lang.belongs_seller, 'show'=>$login_user.role_type != C('SELLER_ROLE_TYPE'),"link"=>['url'=>'Factory/view',"link_id"=>['id'=>'factory_id']]],
+			["value"=>"edit_client_comments","title"=>$lang.client_comments]
+		]
+	listType='flow'
+	flow="instock"
+	from=$list.list
+}

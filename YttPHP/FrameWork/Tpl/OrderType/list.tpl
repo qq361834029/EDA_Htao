@@ -1,0 +1,9 @@
+{ytt_table
+	show=[
+        ["value"=>"id","title"=>L('编号'),"width"=>"20%"],
+		["value"=>"order_type_name","title"=>L('order_type'),"link"=>['url'=>'OrderType/view',"link_id"=>['id'=>'id']],"width"=>"20%"],
+		["value"=>"comments","title"=>L('comment'),"width"=>"50%"]
+	]
+	sort=["order_type_name"=>["sort_by"=>1,"sort_action"=>"index"]]
+	from=$list.list
+}

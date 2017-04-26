@@ -1,0 +1,2 @@
+<?php
+return array ( 'flow_name' => 'process name', 'increase' => 'increase', 'reduce' => 'decrease', 'sale_qn' => 'sales order', 'adjust_qn' => 'adjustment for inventry', 'head_way_storage' => 'storage arrival import', ); ?>

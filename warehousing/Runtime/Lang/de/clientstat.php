@@ -1,0 +1,2 @@
+<?php
+return array ( 'expand_sale_detail' => 'Erweiterung Auftrag-Details', 'date' => 'Verzugsdatum', 'should_paid' => 'Gesamt', 'have_paid' => 'hat Forderungen', 'need_paid' => 'keine Forderungen', 'use_paid' => 'Mengen nicht zugeordnet', 'funds' => 'offener Betrag', 'mobile' => 'Mobil', 'preferential_money' => 'Preis vorschlagen', 'sent_email' => 'E-Mail senden', ); ?>

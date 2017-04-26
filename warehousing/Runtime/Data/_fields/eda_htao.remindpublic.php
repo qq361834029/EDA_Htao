@@ -1,0 +1,2 @@
+<?php
+return array ( 0 => 'id', 1 => 'currency_no', 2 => 'currency_name', 3 => 'to_hide', 4 => 'is_delete', '_autoinc' => false, '_type' => array ( 'id' => 'tinyint(3) unsigned', 'currency_no' => 'varchar(50)', 'currency_name' => 'varchar(50)', 'to_hide' => 'tinyint(3) unsigned', 'is_delete' => 'tinyint(4)', ), ); ?>

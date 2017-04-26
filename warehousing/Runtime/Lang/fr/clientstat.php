@@ -1,0 +1,2 @@
+<?php
+return array ( 'expand_sale_detail' => 'Montrer Détails Liste Vente', 'date' => 'Date Dette', 'should_paid' => 'Montant Recevable', 'have_paid' => 'Montant Reçus', 'need_paid' => 'Montant à Recevoir', 'use_paid' => 'Montant non Distribué', 'funds' => 'Montant impayé', 'mobile' => 'Mobile', 'preferential_money' => 'Montant Remise', 'sent_email' => 'Envoyer E-mail', ); ?>

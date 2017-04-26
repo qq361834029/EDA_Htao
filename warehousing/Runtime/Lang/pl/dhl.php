@@ -1,0 +1,2 @@
+<?php
+return array ( 'dhl_api_request_partial_failure' => 'DHL API请求成功，部分单据处理失败！', 'dhl_api_request_failure' => 'DHL API请求失败！', 'post_code_length_illegal' => '邮编长度应为%d位', 'dhl_api_request_abnormal' => 'DHL API请求异常，请稍后重试！', 'request_exceeds_limit' => '一次请求的单据超过限制%d/%d！', 'must_be_germany' => '必须是德国', 'request_id' => '请求ID', 'dhl_create_shipment' => 'DHL创建发货', 'dhl_delete_shipment' => 'DHL删除发货', 'doc_not_change_cancel_request' => '单据没有变化，无需执行更新，故取消请求！', ); ?>

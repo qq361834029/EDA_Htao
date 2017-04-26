@@ -1,0 +1,2 @@
+<?php
+return array ( 'byorderno_comment' => 'attenzione: massima 50 numeri di ordini, compila cambiando la riga', 'byorderno' => 'Sincronizzazione Ordini - secondo il numero di transazione', 'byorderdate' => 'Sincronizzazione Ordini - secondo la data', 'common' => 'afferrato', ); ?>

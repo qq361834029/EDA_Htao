@@ -1,0 +1,2 @@
+<?php
+return array ( 'recharge_date' => 'Fecha de recargar', 'recharge_money' => 'Importe de recargar', 'payment_document' => 'La recepción de remesas', 'edit_charge' => 'La edición de recarga', 'confirm_money' => 'El importe reconocido', 'recharge_confirm' => 'Recarga de confirmación', 'confirm_money_over_money' => 'Confirmar el importe no podrá superar el importe de la recarga', 'no_upload_payment' => 'Por favor, comprobante de envío de remesas', ); ?>

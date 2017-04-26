@@ -1,0 +1,13 @@
+{ytt_table
+	show=[
+		["value"=>"basic_name","title"=>L('basic_name'),"link"=>['url'=>'Basic/view',"link_id"=>['id'=>'id']],"width"=>"10%"],
+		["value"=>"tax_no","title"=>L('tax_no'),"width"=>"10%"],
+		["value"=>"address","title"=>L('address'),"width"=>"20%"],
+		["value"=>"contact","title"=>L('contact'),"width"=>"10%"],
+		["value"=>"phone","title"=>L('phone'),"width"=>"10%"],
+		["value"=>"fax","title"=>L('fax'),"width"=>"10%"],
+		["value"=>"email","title"=>L('email'),"width"=>"20%"]
+	]
+	sort=["basic_name"=>["sort_by"=>0,"sort_action"=>"index"]]
+	from=$list.list
+}

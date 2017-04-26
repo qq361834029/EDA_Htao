@@ -1,0 +1,2 @@
+<?php
+return array ( 'client_ini_info' => 'Spłata najstarszych faktur', 'client_sale_info' => 'Zlecenia płatnicze do sprzedawcy', 'client_other_info' => 'Powinny roszczenia sprzedawcy', 'client_funds_info' => 'Scalanie do ewidencji płatnika', ); ?>

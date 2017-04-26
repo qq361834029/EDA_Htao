@@ -1,0 +1,2 @@
+<?php
+return array ( 'get_address' => 'Dirección de recogida', 'box_detail_info' => 'Información detallada de la carga', 'add_box' => 'Añadir caja', 'del_box' => 'Borrar caja', 'spec_error' => 'La dimensión se repite', 'hold' => 'Guardar y Siguiente', 'instock_no' => 'Ref. de envío', 'no_delete_box' => '¡Por favor borre los productos que hay en la caja!', 'client_comments' => 'Obsevaciones del vendedor', 'delivery_pics' => 'Foto del envío', 'invoice_pics' => 'Foto de la factura', 'has_instock_cant_delete' => '产品已入库不能删除！', ); ?>

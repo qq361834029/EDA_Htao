@@ -1,0 +1,2 @@
+<?php
+return array ( 'byorderno_comment' => 'Hinweis: Sie können bis zu 50 Aufträge auswählen', 'byorderno' => 'synchronisieren nach Auftragsnummer', 'byorderdate' => 'synchronisieren nach Datum', 'common' => 'Crawl-Erfolg', ); ?>

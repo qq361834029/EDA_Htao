@@ -1,0 +1,10 @@
+{ytt_table
+	show=[
+		['title'=>$lang.product_no,'value'=>'product_no','type'=>'flow_invoice_product'],
+		['title'=>$lang.product_name,'value'=>'product_name','link'=>['url'=>'InvoiceStorage/view','link_id'=>['id'=>'product_id']]],
+		['title'=>$lang.sum_storage,'value'=>'dml_quantity'],
+		['title'=>$lang.total_money,'value'=>'dml_money']
+	]
+	from=$list.list
+	operate=false
+}

@@ -1,0 +1,2 @@
+<?php
+return array ( 'warehouse_address' => 'Lageradresse', 'warehouse_spec' => 'Lagerspezifikation', 'warehouse_area' => 'Lagerfläche', 'landlord' => 'Vermieter', 'bank_info' => 'Bankinformation', 'bank_no' => 'Bankkonto', 'default_warehouse' => 'Standard-Warehouse', 'fax_no' => 'QQ', ); ?>

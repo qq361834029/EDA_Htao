@@ -1,0 +1,10 @@
+{ytt_table
+	show=[
+		['title'=>$lang.init_date,'value'=>'fmd_init_date'],
+		['title'=>$lang.doc_no,'value'=>'init_no','link'=>['url'=>'InvoiceInitStorage/view','link_id'=>'id']],
+		['title'=>$lang.sum_quantity,'value'=>'dml_sum_qn'],
+		['title'=>$lang.total_money,'value'=>'dml_money']
+	]
+	from=$list.list
+	listType="flow"
+}

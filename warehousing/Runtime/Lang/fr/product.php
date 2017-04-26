@@ -1,0 +1,2 @@
+<?php
+return array ( 'weight' => 'Poids produit', 'product_size_notice' => '(Juste remplir la dimension de l\'emballage, s\'il est emballé)', 'product_weight_notice' => '(Juste remplir le poids, s\'il n\'y a pas d\'emballage)', 'import_sku' => 'SKU Externe', ); ?>

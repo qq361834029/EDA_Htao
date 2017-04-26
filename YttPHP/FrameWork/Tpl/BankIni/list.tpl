@@ -1,0 +1,13 @@
+ {ytt_table 
+	show=[
+			["value"=>"dd_paid_type","title"=>$lang.fund_type,"width"=>"8%"],
+			["value"=>"bank_name","title"=>$lang.bank_name,"width"=>"15%"],
+			["value"=>"currency_no","title"=>$lang.currency_no,"width"=>"8%"],
+			["value"=>"fmd_delivery_date","title"=>$lang.date,"width"=>"15%"],
+			["value"=>"dml_money","title"=>$lang.money,"width"=>"15%"],
+			["value"=>"comments","title"=>$lang.comments]
+		]
+	sort=["paid_date"=>["sort_by"=>0,"sort_action"=>"index"]]
+	listType='flow'
+	from=$list.list
+} 

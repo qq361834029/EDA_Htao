@@ -1,0 +1,12 @@
+{ytt_table
+	show=[
+		["value"=>"employee_no","title"=>$lang.employee_no,"link"=>['url'=>'Employee/view',"link_id"=>['id'=>'id']]],
+		["value"=>"employee_name","title"=>$lang.employee_name,"link"=>['url'=>'Employee/view',"link_id"=>['id'=>'id']]],
+		["value"=>"dd_sex","title"=>$lang.sex],
+		["value"=>"basic_name","title"=>$lang.basic_name,'type'=>'flow_show_many_basic'],
+		["value"=>"phone","title"=>$lang.phone],
+		["value"=>"email","title"=>$lang.email]
+	]
+	from=$list.list
+	sort=["employee_no"=>["sort_by"=>0,"sort_action"=>"index"]]
+}

@@ -1,0 +1,274 @@
+html, body, img, a img, form{margin:0; padding:0; border:0 none}
+img{text-align:absmiddle; background-color:transparent}
+html, body, p, table{font:normal normal normal 14PX Tahoma,Verdana,Helvetica,Arial,sans-serif; line-
+height:150%}
+body{ 
+	padding:0;
+	font-size:14px;
+	font-family:宋体,serif,Tahoma, Helvetica, sans-serif;
+	margin:0 auto;
+	color:#2D3035;
+	background-color:#ffffff;
+	font-weight: normal;
+	width: 96%;}
+input{
+	height: 20px;
+	line-height: 20px;
+}
+
+a{text-decoration:none; color:#174B73; border-bottom:1px dashed gray;cursor:pointer;}
+a:hover{color:#F60; border-bottom:1px dashed gray;cursor:pointer;}
+
+.btn14{width:60px;text-align:center;height:22px;line-height:22px;font-weight:bold;}
+
+.shadow{filter:progid:DXImageTransform.Microsoft.Shadow(Color=gray,Direction=120,strength=3)}
+.red{color:red}
+.blue{color:blue}
+.white{color:white}
+.gray{color:gray}
+
+.pic {padding:2px ;border:1px solid silver}
+div.pic{padding:3px}
+div.pic img{border:1px solid gray}
+.tLeft{text-align:left}
+.tRight{text-align:right}
+.tCenter{text-align:center}
+.tTop{vertical-align:top}
+.tBottom{vertical-align:bottom}
+.tMiddle{vertical-align:middle}
+.hMargin{margin-left:3px; margin-right:3px}
+.vMargin{margin-top:3px; margin-bottom:3px}
+
+.fLeft{float:left}
+.fRig{float:right}
+.fNone{float:none}
+.cBoth{clear:both}
+.bold{font-weight:bold}
+.normal{font-weight:normal}
+
+.75{width:75%}
+.100{width:100%}
+.25{width:25%}
+
+.over{background-color:#CFC}
+.out{background-color:#FFF}
+.down{background-color:#CF9}
+.click{background-color:#CC3}
+.space{letter-spacing:4px}
+
+.huge{width:350px}
+.large{width:280px}
+.medium{width:150px}
+.small{width:65px}
+.mini{width:35px}
+.readonly{filter:alpha(opacity=60)}
+
+.bLeft{border-left-width:2px; border-left-color:gray}
+.bLeftRequire{border-left-width:2px; border-left-color:red}
+.bRight{border-right-width:2px; border-color:gray}
+.bBottom{border-bottom-width:2px; border-color:gray}
+.bTop{border-top-width:2px; border-color:gray}
+.dashed{border:1pt dashed gray}
+.solid{border:1pt solid gray}
+.wrongBorder{border:2pt solid orange}
+
+.none{display:none}
+.inline{display:inline}
+input, textarea, select{padding:3px 3px; 	background: #f5f5f5;
+	border: 1px solid #ccc;margin:0; overflow:none; font:100%/1.0em Tahoma,Arial,Helvetica,sans-serif; 
+color:#444}
+input.focus{filter:blur(strength=50); border:1pt solid green}
+div.impBtn{background:url(../Images/Admin/idx_btnbg.gif) top repeat-x; border:1px solid gray; border-right:1px 
+solid #316835; border-bottom:1px solid #316835; filter:progid:DXImageTransform.Microsoft.Shadow
+(Color=gray,Direction=120,strength=3)}
+span.impBtn{background:url(../Images/Admin/bgcolor.gif) top repeat-x; border:1px solid #316835}
+input.button{ height:23px; min-width:65px; margin:0; border:0; 	padding: 0 10px; letter-spacing:3px; text-
+align:center; background-color:transparent; background-position:5px 40%; cursor:pointer}
+
+input.submit, input.button {
+    background: url("../Images/Admin/idx_btnbg.gif") repeat-x scroll center center #F1F1F1;
+    border: 1px solid gray;
+    color: #333333;
+    cursor: pointer;
+    height: 25px;}
+
+form dt{font-size:14px;height:24px;line-height:24px;}
+form dd{font-size:14px;height:24px;line-height:24px;}
+
+input.imgButton{width:65px; height:26px; margin:0; border:0; padding-top:3px!important; padding-
+top:5px;letter-spacing:4px; font-weight:bold; background-color:transparent; background-position:5px 40%; 
+background-repeat:no-repeat; cursor:pointer; text-align:center;}
+
+div.loading{position:absolute; z-index:90; top:240px; left:250px; width:250px; height:60px; border:1px ridge 
+gray; background-color:#eee; padding-top:10px}
+div.search{float:left; background:#FBFAF8; border:1px solid #d4d4d4; padding:5px; width:98%; text-
+align:justify; margin-top:8px}
+div.tips{border:1px solid #d4d4d4; background:#FBFAF8 url(../Images/Admin/use.gif) no-repeat; background-
+position:5px 8px; padding:8px 25px; overflow:auto; max-height:250px; margin:8px; line-height:185%; 
+color:#393939; font-weight:bold; float:left; width:250px !important; width:25%; height:85px}
+div.result{border:1px solid #d4d4d4; background:#FFC; padding:8px 12px; margin:2px 15px; line-height:185%; 
+color:#393939; font-weight:bold; float:auto; width:85%; height:25px}
+div.require{border:1pt solid #F63}
+span.require{margin:0px 5px; color:#F30; font-weight:bold; font-family:Verdana,arial; font-size:17px}
+div.wait{    line-height:155%; border:1px solid #d4d4d4; background:#FBFAF8; padding:3px; overflow:auto; 
+width:65%; color:gray; max-height:250px; margin:8px}
+div.header{
+width:100%; font:normal normal normal 14px Tahoma,Verdana,Helvetica,Arial,sans-serif; padding:0px 0px; 
+background: #464646; color:white; 
+border-bottom:2px solid silver;height:48px}
+div.main{float:left; width:98%; padding:3px;}
+div.full{width:96%; margin:5pt; padding:5px 5px}
+
+div.nav{float:right; position:relative; margin-right:8px;padding:8px;color:#9EB6DA;}
+
+div.nav A{color:white; font:normal normal normal 14px Tahoma,Verdana,Helvetica,Arial,sans-serif; text-
+decoration:none}
+
+div.nav A:hover{border-bottom:1px dotted; text-decoration:none; color:silver}
+.effect{background:#F1F1FA; width:300px; height:25px; border:1pt solid silver; text-align:center; font:normal 
+normal normal 14px Tahoma}
+div.menu{float:left; width:90%; padding:3px; margin:0px; text-align:center}
+
+div.content{padding:0; clear:both;float:left; width:100%; margin-top:5px; font-
+family:Verdana,Geneva,Arial,Helvetica,sans-serif}
+
+div.operate{margin:8px 3px; float:left}
+div.pic{padding:3px;float:left;text-align:center}
+div.pic img{border:1px solid silver;padding:2px;}
+
+div.list{width:100%}
+div.title{float:none; background:#FBFAF8; border:1px solid #d4d4d4; padding-top:5px; padding-bottom:5px; 
+padding-left:20px; width:97%; margin:5px 0px; text-align:left; font-size:14px; font-weight:bold; letter-
+spacing:4px; background:#F0F0FF; background-position:5px 40%}
+div.headTitle{float:left; color:white; font-weight:bold; font-family:Tahoma,Verdana}
+div.page{float:left; background:#FBFAF8; border:1px solid #d4d4d4; padding:5px; width:98%; margin:5px 0px; 
+text-align:right}
+div.attach{float:left; background:#FBFAF8; border:1px solid #d4d4d4; padding:3px; line-height:150%; width:95%; 
+margin:5px 0px; text-align:left}
+div.footer{ clear:both; padding:8px 0px; width:100%; text-align:center; font:normal normal normal 11px 
+Verdana,Geneva,Arial,Helvetica,sans-serif; background-color:#464646; border-top:3px solid #6B90C7; 
+color:silver}
+
+div.footer a{color:white; text-decoration:none; border-bottom:1px dotted}
+
+div.footer a:hover{color:silver; text-decoration:none; border-bottom:1px dotted}
+div.empty{ line-height:155%; border:1px dotted #d4d4d4; background:#FBFAF8; padding:3px; overflow:auto; 
+width:95%; color:orangeRed; margin:0px auto}
+div.message{width:75%; padding:5pt; float:none; margin:15% auto 0% auto; clear:both; text-align:center}
+div.seg{width:45%; float:left}
+div.logo{margin:auto; width:85%; font:bold 10pt Tahoma; color:orange}
+div.errorMessage{line-height:150%; padding:5px; margin:3pt; font-weight:bold; font-size:15px; font-
+family:Tahoma,Verdana; border:1pt dashed gray; color:#F30; background:#CFC}
+
+ table thead th {
+    background-color: #DDEEEE;
+    background-image: url("../Images/Admin/bgcolor.gif");
+    border-left: 1px solid #CCDDDD;
+    color: #000000;
+    height:23px;
+    line-height:23px;}
+
+table.list{margin:3px 0px; padding:8px; border-collapse:collapse; border:1px solid gray; text-align:left; 
+width:99%; float:left}
+
+table thead th{border-left:1px solid #cdd; background-color:#dee; background-image:url
+(../Images/Admin/bgcolor.gif); color:#000;}
+
+
+ table.list th, 
+ table.list td{border-left:1px solid silver; border-bottom:1px solid silver; vertical-align:top; padding:0 
+3px;height:24px;line-height:24px;}
+
+table th.active, td.active{background-color:#CFC}
+table tr.row{background-color:#FFF}
+table tr.active{background-color:#CFC}
+table th.head{background:url(../Images/Admin/titlebg.gif) repeat-x; background-position:12px 45%; padding-
+left:25px; color:white}
+ 
+/* ===========主菜单标签============== */
+.topmenubg {background: url(../Images/Admin/bg_header.gif) repeat-x;}
+.topmenu {
+	float: left;
+	/*min-width: 600px;*/
+	font-size: 14px;
+	font-weight: bold;
+	color: #555555;
+	margin-top: 18px;}
+	
+.topmenu ul {
+	margin: 0px;
+	padding: 0px;}
+
+.topmenu li {
+	float: left;
+	border: solid 1px #43809C;
+	border-bottom: none;
+	list-style-type: none;
+	margin-right: 1px;
+	margin-top: 2px;}
+
+.topmenu span {
+	display: block;
+	float: left;
+	padding: 0 10px;
+	background: url(../Images/Admin/bg_menu2.gif);
+	height: 25px;
+	line-height:25px;
+	border: solid 1px #FFFFFF;
+	border-bottom: none;
+	color: #555555;}
+
+.topmenu .current {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url("../Images/Admin/bg_menu.gif") repeat scroll 0 0 transparent;
+    border-color: #FFFFFF #FFFFFF -moz-use-text-color;
+    border-style: solid solid none;
+    border-width: 1px 1px medium;
+    color: #555555;
+    display: block;
+    float: left;
+    height: 25px;
+    line-height:25px;
+    padding: 0 10px;}
+
+ /* 角色样式 */
+.div_main{width:100%; clear:both; margin:0 auto;overflow:hidden;}	
+.div_role_operate{float:left;width:100%;border-bottom:1px dashed #CCCCCC;margin-top:5px;}
+.div_role{ 
+	float: left;
+    width:220px;
+	font-size:12px;
+	text-align:left;
+	line-height:20px;
+	color:#000000;
+	margin:5px 0px;}
+	
+.div_role_span{
+	border-top:1px solid #CCCCCC;
+	border-bottom:1px solid #CCCCCC;
+	background-color:#E9E9E9;
+	font-weight:bold;
+	padding-left:5px;
+	height:24px;
+	line-height:24px;
+	width:100%;
+	margin-bottom:5px;}
+	
+.div_role_span　select{font-weight:bold;}
+.role_add { float:left; width:220px;padding-left: 5px;}	
+.role_add li{ 
+    list-style:none;
+	font-size:12px;
+	width:100%;
+	padding-left:20px;
+    text-align:left;
+	color:#333333;
+	font-weight:normal;}
+
+#ac_search {
+	height: 26px;
+}

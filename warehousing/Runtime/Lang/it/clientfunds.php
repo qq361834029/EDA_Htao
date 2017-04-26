@@ -1,0 +1,2 @@
+<?php
+return array ( 'client_ini_info' => 'importo di debito iniziale della venditore', 'client_sale_info' => 'importo di debito per ordine', 'client_other_info' => 'debito di venditore', 'client_funds_info' => 'record di incassi da unire', ); ?>

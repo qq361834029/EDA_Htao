@@ -1,0 +1,2 @@
+<?php
+return array ( 0 => 'id', 1 => 'factory_id', 2 => 'warehouse_id', 3 => 'express_discount', 4 => 'process_discount', 5 => 'express_cn_discount', 6 => 'declare_discount', '_autoinc' => false, '_type' => array ( 'id' => 'int(10) unsigned', 'factory_id' => 'int(11)', 'warehouse_id' => 'int(11)', 'express_discount' => 'decimal(3,2)', 'process_discount' => 'decimal(3,2) unsigned', 'express_cn_discount' => 'decimal(3,2)', 'declare_discount' => 'decimal(3,2)', ), ); ?>

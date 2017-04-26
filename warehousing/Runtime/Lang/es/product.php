@@ -1,0 +1,2 @@
+<?php
+return array ( 'weight' => 'Peso del producto', 'product_size_notice' => '(Si va con embalaje,solo se necesita el tamaño exterior)', 'product_weight_notice' => '(Si va con embalaje,solo se necesita el peso total)', 'import_sku' => 'SKU externo', ); ?>

@@ -1,0 +1,260 @@
+body{ 
+	padding:0;
+	overflow:hidden;
+	font-size:12px;
+	font-family:"宋体",Verdana,Helvetica,sans-serif;
+	margin:0 auto;
+	color:#222222;
+	background-color:#ffffff;}
+
+div,table,select,input, button,legend,textarea,form,p,h1,h2,h3,h4,h5,fieldset{padding:0; margin:0;}
+ul,li,ol,dl,dt,dd{padding:0; margin:0; list-style:none;}
+table{ border-collapse: collapse;border-spacing: 0;margin:0 auto;}
+img{ border:0; padding:0; margin:0}
+.none{display:none;}
+.clear_both{clear:both;}
+.fl{float:left!important;}
+.fr{float:right!important;}
+.tbold{ font-weight:bold;}
+.t_center{ text-align:center !important;}
+.t_right{ text-align:right!important;}
+.t_left{ text-align:left !important;}
+.b_top{border-top-style:none!important;}
+.b_left{border-left-style:none!important;}
+.b_right{border-right-style:none!important;}
+.b_bottom{border-bottom-style:none!important;}
+.b_none{border-style:none!important;}
+.pad_top_10{padding-top:10px;}
+.t_right_red{color:red !important;text-align:right !important;font-weight:bold;}
+table{font-size:12px;}
+a {color:#000000; text-decoration: none;}
+
+/*列表页表格样式*/
+.list{
+	width:726px;
+	/*border:1px solid #cccccc;*/
+}
+		
+.list th{
+	border:1px solid #cccccc;
+/*	border-top:1px solid #cccccc;
+	border-right:1px solid #cccccc;*/
+	background-color:#EBEBEB;
+	word-wrap: break-word;
+	height:26px;
+	line-height:26px;
+	padding:0;
+	white-space: nowrap;/*文字不换行*/
+	text-align:center;
+	color:#333;} 
+	
+.list td{
+	border:1px solid #cccccc;
+/*	border-top:1px solid #cccccc;
+	border-right:1px solid #cccccc;*/
+	height:28px; 
+	word-wrap: break-word;
+	line-height:16px;
+	padding:0px 3px;
+	text-align:center;}
+
+.green{color:#009900!important;cursor:pointer!important;}
+.red{color:#ff0000!important;font-weight:bold;}
+span .red{color:#ff0000!important;cursor:pointer!important;font-weight:bold;}
+.blue{color:#0000CC!important;cursor:pointer!important;}
+
+
+/*隐藏操作*/
+.operate{display:none;}
+#autoshow_img{display:none;}
+#express_img{display:none;}
+.page_toolbar{display:none;}
+#think_page_trace{display: none;}
+
+/*发票公司打印相关样式*/
+.table_out{
+	margin:0px auto; 	
+	width:726px!important;
+	font-size:12px!important;}
+
+.table_company{margin:0px auto; /*background-color:#D4D3D3;*/}
+.table_company td{text-align:left;line-height:22px;padding-left:5px;}
+
+.table_fdc{margin:0px auto;font-size:12px;}
+.table_fdc th{border: 1px solid #000000; background-color:#EBEBEB;line-height:24px;}
+.table_fdc td{border: 1px solid #000000; text-align:center; line-height:24px; padding-right:5px;height:24px;}
+
+.detail{
+	margin:0px auto; 
+	width:726px!important;
+	font-size:12px!important;
+	border-radius: 5px;}
+
+.detail th{border: 1px solid #000000; background-color:#EBEBEB;line-height:24px!important; height:24px!important;}
+.detail td{border: 1px solid #000000; text-align:right; padding-left:5px;padding-right:5px;}
+
+
+/* 明细页新增、查看页－圆角外框样式 */	
+.add_box{
+	width:726px;
+	height:auto; 
+	border:1px solid #89A5C5; 
+	padding:5px 0 10px 0;
+	border-radius:5px;}
+
+.add_table{width:720px; margin:0 auto;font-size:12px;}
+.add_table td {height:32px; line-height:32px;text-align:right;}
+.add_table th {
+	height:30px;  
+	font-weight:bold; 
+	color:#366599;
+	text-align:left; }
+
+/*明细页表格样式*/
+.detail_list{width:726px;font-size:12px;border:1px solid #cccccc;}
+.detail_list th{
+	border-top:1px solid #cccccc;
+	border-right:1px solid #cccccc;
+	background-color:#EBEBEB;
+	white-space: nowrap;
+	word-wrap: break-word;
+	height:26px;
+	line-height:15px;
+	color:#333333;
+	padding:0;
+	text-align:center;} 
+	
+.detail_list td{
+	border-top:1px solid #cccccc;
+	border-right:1px solid #cccccc;
+	white-space: nowrap;
+	word-wrap: break-word;
+	height:26px;
+	line-height:26px;
+	padding-left:3px;
+	padding-right:3px;
+	color:#333333;
+	text-align:center;
+	font-weight: normal;}
+
+.detail_list td#span_product_name {
+	white-space:normal;
+	word-break:break-all;
+	word-wrap:break-word;
+	max-width: 150px !important;
+}
+
+.detail_list tfoot td{color:red;font-weight:bold;text-align:right;}	
+.b_top_load{border-top-style:none!important;background:#ffffff!important;}	
+.b_top_style{border-top:1px solid #cccccc!important;}
+.v_hidden{visibility:hidden;/*占位隐藏内容*/}
+
+/*审核和制单人员*/
+.titleth{width:726px; float:left; height:30px; line-height:30px;font-size:12px;}
+.titlefl{float:left;width:300px;}  	
+.afr{float:right;FONT-SIZE:12px; COLOR:#FF0000!important; width:400px; text-align:right; padding-right:15px;font-weight:normal!important;}
+
+/*新装柜统计表*/
+.load_list{ border:1px solid #CCCCCC; width:450px;}	
+.load_list td {
+	border:1px solid #CCCCCC;
+	height:26px; 
+	line-height:26px;
+	text-align:right;
+	padding:0 3px;}
+
+/*销售列表－款项支付*/
+.add_table_money{width:726px;font-size:12px;}
+.add_table_money td{
+   border:1px solid #cccccc;
+	height:32px; 
+	line-height:32px;
+	padding-left:3px;
+	padding-right:3px;
+	text-align:center;}
+
+.pay_table{width:680px; border-top-style:none!important;float:right;font-size:12px;}
+.pay_table td{ 
+    border:1px solid #cccccc;
+	height:32px; 
+	line-height:32px;
+	text-align:center;}
+.pay_table input[type="text"]{width:80px;border: 1px solid #bbbbbb;height:20px; padding-right:2px;}
+.date_input{width:90px;border: 1px solid #bbbbbb;  padding-right:2px; text-align:left!important;}
+.panes_sale{float:right;}
+
+
+/*新增页－流程自适应排列样式*/
+.basic_tb{ 
+	float:left; 
+	width:720px; 
+	height:auto;
+	padding:10px 40px;}
+	
+.basic_tb  li{ 
+	float: left;
+    width:280px;
+    height:28px;
+    line-height:28px;
+    padding-right:5px;
+    text-align:left;
+    white-space:nowrap;/*文本不进行换行*/}	
+    
+ /*查看产品详细信息排列样式*/
+.product_basic{ 
+	float:left; 
+	width:720px;  
+	height:auto;}
+	
+.product_basic  li{ 
+	float: left;
+    width:180px;
+    height:28px;
+    line-height:28px;
+    padding-right:5px;
+    text-align:left;
+    white-space:nowrap;/*文本不进行换行*/}   
+    
+  /*产品详细信息－基本信息自适应排列样式*/
+.product_tb{ 
+	float:left; 
+	width:680px;
+	height:auto;}
+	
+.product_tb  li{ 
+	float: left;
+    width:170px;
+    line-height:28px;
+    text-align:left;
+    white-space:nowrap;/*文本不进行换行*/}   
+    
+/*百分比样式*/
+.width5{width:5%;}.width10{width:10%;}.width15{width:15%;}.width20{width:20%;}.width25{width:20%;}.width30{width:30%;}
+.width40{width:40%;}.width50{width:50%;}.width60{width:60%;}.width70{width:70%;}.width80{width:80%;}.width90{width:90%;}
+.width98{width:98%;	margin:0 auto;}.width100{width:100%;}
+
+/*产品配比表－表格样式*/	
+.fit{border: 1px solid #CCCCCC; border-collapse: collapse;float:left;width:99%;}
+.fit td {
+	word-wrap:break-word;
+	border:1px solid #CCCCCC;
+	height:24px; 
+	line-height:24px;
+	text-align:left!important;
+	width:68px;}
+	
+.fit td input{
+	border: 1px solid #bbbbbb;
+	background-color: transparent;
+	height:18px;
+	width:60px !important;}
+	
+.alltotal_color{background:#B6DEFF;font-weight:bold!important;;}
+.total_color{background:#DCEFFF;font-weight:bold!important;;}
+.size_color{background:#EEF7FF;}
+.selected_color{background:#ff0000;}
+.selected_tr{background:#DEF2FC !important;}
+.selected_tr td{background:#E5F4FB!important;}
+.detail_operation{width:80px !important;}
+.product_width{width:80%;}
+	

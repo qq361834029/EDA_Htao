@@ -1,0 +1,16 @@
+ {ytt_table 
+	show=[
+            ["value"=>"fmd_delivery_date","title"=>$lang.swap_date,"width"=>"8%"],
+			["value"=>"out_bank_name","title"=>$lang.out_swap_account_name,"width"=>"10%"],
+            ["value"=>"out_currency_no","title"=>$lang.out_swap_currency_name,"width"=>"7%"],
+            ["value"=>"dml_out_money","title"=>$lang.out_swap_money,"width"=>"10%"],
+			["value"=>"in_bank_name","title"=>$lang.in_swap_account_name,"width"=>"8%"],
+            ["value"=>"in_currency_no","title"=>$lang.in_swap_currency_name,"width"=>"7%"],
+			["value"=>"dml_rate","title"=>$lang.rate,"width"=>"7%"],
+            ["value"=>"dml_in_money","title"=>$lang.in_swap_money,"width"=>"10%"],
+			["value"=>"edit_comments","title"=>$lang.comments]
+		]
+	sort=["paid_date"=>["sort_by"=>0,"sort_action"=>"index"]]
+	listType='flow'
+	from=$list.list
+} 

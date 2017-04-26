@@ -1,0 +1,2 @@
+<?php
+return array ( 'p_name' => 'Podłączony do nazwy atrybutu', 'pv_name' => 'Nazwa wartości atrybutów', 'pv_no' => 'Wartość atrybutu', 'title_2' => 'Atrybuty powiązane informacje', 'title_1' => 'Informacje wartość atrybutu', ); ?>

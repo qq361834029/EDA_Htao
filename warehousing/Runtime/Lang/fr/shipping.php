@@ -1,0 +1,2 @@
+<?php
+return array ( 'zip_limit' => 'Restriction du CP', 'is_express' => 'livraison ?', 'bulk' => 'Volume', 'shipping_no' => 'ID Transporteur', 'whether_api_enabled' => 'Faut-il redémarrer l\'API ?', ); ?>

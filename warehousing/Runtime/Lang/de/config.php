@@ -1,0 +1,2 @@
+<?php
+return array ( 'system_config' => '系统配置', 'dhl_shipper_info' => 'DHL API发货人信息', 'dhl_request_time_limit' => 'DHL API请求时间限制', 'dhl_request_time_limit_day' => '每天时间限制范围', 'dhl_request_time_limit_week' => '每周时间限制范围', 'correos_shipper_info' => 'CORREOS API发货人信息', 'correos_request_time_limit' => 'CORREOS API请求时间限制', 'correos_request_time_limit_day' => '每天时间限制范围', 'correos_request_time_limit_week' => '每周时间限制范围', 'gls_shipper_info' => 'GLS API发货人信息', 'gls_track_no_interval' => 'GLS追踪单号区间', ); ?>

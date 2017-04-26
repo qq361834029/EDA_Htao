@@ -1,0 +1,13 @@
+{ytt_table
+	show=[
+        ["value"=>"w_name","title"=>L('belongs_warehouse'),"width"=>"10%"],
+		["value"=>"package_name","title"=>L('package_name'),"link"=>['url'=>'Package/view',"link_id"=>['id'=>'id']],"width"=>"20%"],
+		["value"=>"package_spec","title"=>L('package_spec'),"width"=>"30%"],
+		["value"=>"weight","title"=>L('weight'),"width"=>"10%"],
+		["value"=>"dml_price","title"=>L('price'),"width"=>"10%"],
+		["value"=>"comments","title"=>L('comment'),"width"=>"20%"]
+	]
+	operate=!$is_factory
+	sort=["package_name"=>["sort_by"=>1,"sort_action"=>"index"]]
+	from=$list.list
+}

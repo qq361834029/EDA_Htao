@@ -1,0 +1,2 @@
+<?php
+return array ( 0 => 'id', 1 => 'module', 2 => 'title', 3 => 'status', 4 => 'sort', 5 => 'parent_id', 6 => 'level', 7 => 'group_id', 8 => 'parent_link_id', 9 => 'is_user', '_autoinc' => false, '_type' => array ( 'id' => 'smallint(5) unsigned', 'module' => 'varchar(100)', 'title' => 'varchar(50)', 'status' => 'tinyint(4)', 'sort' => 'smallint(5) unsigned', 'parent_id' => 'smallint(5) unsigned', 'level' => 'tinyint(3) unsigned', 'group_id' => 'smallint(5) unsigned', 'parent_link_id' => 'smallint(6)', 'is_user' => 'tinyint(3) unsigned', ), ); ?>

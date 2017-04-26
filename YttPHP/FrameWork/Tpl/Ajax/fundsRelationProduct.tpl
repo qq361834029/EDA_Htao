@@ -1,0 +1,40 @@
+<div class="basic_tb">  
+<ul> 
+	<li>
+		{$lang.product_id}：
+		{$rs.id}
+	</li>
+	<li>
+		{$lang.product_no}： 
+		{$rs.product_no}
+	</li>
+	<li>
+		{$lang.product_name}：
+		{$rs.product_name}
+	</li>
+	<li>
+		{$lang.product_no}： 
+		{$rs.product_no}
+	</li>
+	<li>
+		{$lang.bulk_with_unit}：
+		{$rs.dml_cube}
+	</li>
+	<li>
+		{$lang.weight_with_unit}： 
+		{$rs.dml_weight}
+	</li>
+	<li>
+		{$lang.check_bulk_with_unit}：
+		{$rs.dml_check_cube}
+	</li>
+	<li>
+		{$lang.check_weight_with_unit}： 
+		{$rs.dml_check_weight}
+	</li>
+	<li>
+		{$lang.check_status}： 
+		{$rs.dd_check_status}
+	</li>	
+</ul>
+</div>

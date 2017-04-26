@@ -1,0 +1,11 @@
+{ytt_table 
+	show=[
+			["value"=>"pay_class_name","title"=>$lang.funds_class_name],
+			["value"=>"dd_pay_type","title"=>$lang.funds_class_type],
+			["value"=>"dd_relation_object","title"=>$lang.relation_object],
+			["value"=>"dd_relation_type","title"=>$lang.funds_class_relation_type],
+			["value"=>"edit_comments","title"=>$lang.comments]
+		]
+	sort=["pay_class_name"=>["sort_by"=>0,"sort_action"=>"index"]]
+	from=$list.list
+}
